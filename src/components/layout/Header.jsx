@@ -14,7 +14,7 @@ export default function Header() {
     <header className="w-full font-sans">
       {/* Top Bar */}
       <div className="hidden lg:block bg-gray-50 border-b border-gray-200 text-sm py-1">
-        <div className="container mx-auto px-4 flex justify-between items-center max-w-7xl">
+        <div className="px-4 flex justify-between items-center w-full">
           {/* Left: User Actions */}
           <div className="flex items-center space-x-2">
             <span className="text-gray-600">Welcome User!</span>
@@ -56,7 +56,7 @@ export default function Header() {
 
       {/* Main Header */}
       <div className="bg-white border-b border-gray-200 py-3 sm:py-4 shadow-sm">
-        <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center max-w-7xl gap-3 lg:gap-6">
+        <div className="px-4 flex flex-col lg:flex-row justify-between items-center w-full gap-3 lg:gap-6">
           
           {/* Logo & Mobile Action Wrapper */}
           <div className="flex items-center justify-between w-full lg:w-auto">
