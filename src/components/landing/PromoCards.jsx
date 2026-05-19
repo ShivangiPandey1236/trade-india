@@ -31,7 +31,7 @@ export default function PromoCards() {
       </div>
 
       {/* Seller Card */}
-      <div className="flex-1 rounded-xl bg-gradient-to-br from-red-500 via-rose-600 to-red-700 border border-red-600/20 p-4 shadow-sm relative overflow-hidden group flex flex-col justify-between min-h-[120px] lg:h-[192px]">
+      <div className="flex-1 rounded-xl bg-gradient-to-br from-red-500 via-rose-600 to-red-700 border border-red-600/20 p-4 shadow-sm relative overflow-hidden group flex flex-col justify-between min-h-[120px] lg:flex-1">
         {/* Content */}
         <div className="relative z-10 text-white">
           <span className="text-red-100/90 text-xs font-medium tracking-wide">Want to grow your</span>
