@@ -78,25 +78,26 @@ export default function Header() {
           </div>
 
           {/* Search Bar */}
-          <div className="flex-1 max-w-3xl flex">
-            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm">
-              <div className="w-48 border-r border-gray-200 bg-white flex-shrink-0 items-center m-2">
+          <div className="flex-1 max-w-3xl flex px-4">
+            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm h-11 items-center bg-white">
+              <div className="w-44 h-full border-r border-gray-200 bg-gray-50/50 flex items-center shrink-0">
                 <Select defaultValue="products">
-                  <SelectTrigger className="w-full border-0 focus:ring-0 rounded-none h-11 text-gray-600 font-medium">
-                    <SelectValue placeholder="Products / Services" />
+                  <SelectTrigger className="w-full border-0 focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 shadow-none bg-transparent hover:bg-transparent text-gray-600 font-semibold px-4 h-full cursor-pointer focus:outline-none">
+                    <SelectValue placeholder="Products" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="products">Products / Services</SelectItem>
-                    <SelectItem value="companies">Companies</SelectItem>
+                    <SelectItem value="Products / Services">Products / Services</SelectItem>
+                    <SelectItem value="Companies">Companies</SelectItem>
+                    <SelectItem value="Leads">By Leads</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               <Input 
                 type="text" 
                 placeholder="Enter product / service to search" 
-                className="flex-1 border-0 focus-visible:ring-0 rounded-none h-11 px-4 text-base"
+                className="flex-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:ring-0 shadow-none rounded-none h-full px-4 text-slate-700 placeholder-gray-400 text-sm outline-none bg-transparent"
               />
-              <Button className="rounded-none h-11 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base rounded-r-full">
+              <Button className="rounded-none h-full px-8 bg-primary hover:bg-primary/95 text-primary-foreground font-bold transition-all shrink-0">
                 Search
               </Button>
             </div>
