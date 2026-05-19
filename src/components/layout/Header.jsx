@@ -18,10 +18,10 @@ export default function Header() {
           {/* Left: User Actions */}
           <div className="flex items-center space-x-2">
             <span className="text-gray-600">Welcome User!</span>
-            <Button variant="outline" size="sm" className="h-7 text-blue-600 border-blue-600 hover:bg-blue-50 px-3 py-0">
+            <Button variant="outline" size="sm" className="h-7 text-primary border-primary hover:bg-primary/10 hover:text-primary px-3 py-0">
               Sign In
             </Button>
-            <Button size="sm" className="h-7 bg-blue-700 hover:bg-blue-800 text-white px-3 py-0">
+            <Button size="sm" className="h-7 bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-0">
               Join Free
             </Button>
           </div>
@@ -35,18 +35,18 @@ export default function Header() {
 
           {/* Right: Links */}
           <div className="flex items-center space-x-6 text-gray-600">
-            <div className="flex items-center cursor-pointer hover:text-blue-600 group">
-              <UserCircle className="w-4 h-4 mr-1 text-gray-500 group-hover:text-blue-600" />
+            <div className="flex items-center cursor-pointer hover:text-primary group">
+              <UserCircle className="w-4 h-4 mr-1 text-gray-500 group-hover:text-primary" />
               <span>For Buyer</span>
               <ChevronDown className="w-3 h-3 ml-1" />
             </div>
-            <div className="flex items-center cursor-pointer hover:text-blue-600 group">
-              <Store className="w-4 h-4 mr-1 text-gray-500 group-hover:text-blue-600" />
+            <div className="flex items-center cursor-pointer hover:text-primary group">
+              <Store className="w-4 h-4 mr-1 text-gray-500 group-hover:text-primary" />
               <span>For Seller</span>
               <ChevronDown className="w-3 h-3 ml-1" />
             </div>
-            <div className="flex items-center cursor-pointer hover:text-blue-600 group">
-              <Headset className="w-4 h-4 mr-1 text-gray-500 group-hover:text-blue-600" />
+            <div className="flex items-center cursor-pointer hover:text-primary group">
+              <Headset className="w-4 h-4 mr-1 text-gray-500 group-hover:text-primary" />
               <span>Help</span>
               <ChevronDown className="w-3 h-3 ml-1" />
             </div>
@@ -63,14 +63,14 @@ export default function Header() {
             <div className="flex items-center">
               {/* Fake logo icon */}
               <div className="relative flex items-center justify-center mr-2">
-                <span className="text-4xl italic font-bold text-blue-800 leading-none">e</span>
-                <div className="w-2 h-2 rounded-full bg-red-600 absolute top-1 right-[-4px]"></div>
+                <span className="text-4xl italic font-bold text-primary leading-none">e</span>
+                <div className="w-2 h-2 rounded-full bg-destructive absolute top-1 right-[-4px]"></div>
               </div>
               <div className="flex flex-col">
                 <div className="flex items-baseline">
-                  <span className="text-2xl font-bold text-blue-900 tracking-tight">Exporters</span>
-                  <span className="text-2xl font-bold text-red-600 tracking-tight">India</span>
-                  <span className="text-2xl font-bold text-blue-900 tracking-tight">.com</span>
+                  <span className="text-2xl font-bold text-primary tracking-tight">Exporters</span>
+                  <span className="text-2xl font-bold text-destructive tracking-tight">India</span>
+                  <span className="text-2xl font-bold text-primary tracking-tight">.com</span>
                 </div>
                 <span className="text-[10px] text-gray-500 tracking-wide mt-[-2px]">Largest Searchable B2B Marketplace</span>
               </div>
@@ -79,7 +79,7 @@ export default function Header() {
 
           {/* Search Bar */}
           <div className="flex-1 max-w-3xl flex">
-            <div className="flex w-full rounded-full border-2 border-blue-500 overflow-hidden shadow-sm">
+            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm">
               <div className="w-48 border-r border-gray-200 bg-white flex-shrink-0 items-center m-2">
                 <Select defaultValue="products">
                   <SelectTrigger className="w-full border-0 focus:ring-0 rounded-none h-11 text-gray-600 font-medium">
@@ -96,7 +96,7 @@ export default function Header() {
                 placeholder="Enter product / service to search" 
                 className="flex-1 border-0 focus-visible:ring-0 rounded-none h-11 px-4 text-base"
               />
-              <Button className="rounded-none h-11 px-8 bg-[#2b65c2] hover:bg-[#1a4b99] text-white font-medium text-base rounded-r-full">
+              <Button className="rounded-none h-11 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-medium text-base rounded-r-full">
                 Search
               </Button>
             </div>
@@ -104,7 +104,7 @@ export default function Header() {
 
           {/* Action Button */}
           <div className="flex-shrink-0">
-            <Button className="h-11 px-6 rounded-full bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-medium text-base shadow-md transition-all">
+            <Button className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all">
               Post Buy Requirement
             </Button>
           </div>
