@@ -92,7 +92,7 @@ export default function Header() {
             <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm h-10 sm:h-11 items-center bg-white">
               {/* Category selector - hidden on mobile, visible on sm and up */}
               <div className="hidden sm:flex w-40 h-full border-r border-gray-200 bg-gray-50/50 items-center shrink-0">
-                <Select defaultValue="products">
+                <Select defaultValue="Products / Services">
                   <SelectTrigger className="w-full border-0 focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 shadow-none bg-transparent hover:bg-transparent text-gray-600 font-semibold px-4 h-full cursor-pointer focus:outline-none text-sm">
                     <SelectValue placeholder="Products" />
                   </SelectTrigger>
