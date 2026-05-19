@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button"
 
 export default function PromoCards() {
   return (
-    <div className="flex flex-col sm:flex-row md:flex-col gap-4 w-full h-full justify-between">
+    <div className="flex flex-col sm:flex-row lg:flex-col gap-4 w-full h-full justify-between">
       {/* Buyer Card */}
       <div className="flex-1 rounded-xl bg-gradient-to-br from-amber-50 via-amber-100/70 to-amber-200/50 border border-amber-200/60 p-5 shadow-sm relative overflow-hidden group flex flex-col justify-between min-h-[160px]">
         {/* Content */}

@@ -40,7 +40,7 @@ export default function Sidebar() {
         <h3 className="text-lg font-bold text-slate-800 mb-3 border-b border-gray-100 pb-2">
           Top Categories
         </h3>
-        <ul className="space-y-0.5">
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1 gap-1 md:gap-0.5 md:space-y-0.5">
           {categories.map((cat, idx) => {
             const Icon = cat.icon
             return (
