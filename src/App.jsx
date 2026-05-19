@@ -4,6 +4,7 @@ import HeroBanner from './components/landing/HeroBanner'
 import PromoCards from './components/landing/PromoCards'
 import ValueAdds from './components/landing/ValueAdds'
 import FloatingChat from './components/landing/FloatingChat'
+import Footer from './components/layout/Footer'
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
           <ValueAdds />
         </div>
       </main>
+
+      {/* Footer Element */}
+      <Footer />
 
       {/* Support Chat Badge */}
       <FloatingChat />
