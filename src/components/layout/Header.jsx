@@ -80,7 +80,7 @@ export default function Header() {
           {/* Search Bar */}
           <div className="flex-1 max-w-3xl flex">
             <div className="flex w-full rounded-full border-2 border-blue-500 overflow-hidden shadow-sm">
-              <div className="w-48 border-r border-gray-200 bg-white flex-shrink-0">
+              <div className="w-48 border-r border-gray-200 bg-white flex-shrink-0 items-center m-2">
                 <Select defaultValue="products">
                   <SelectTrigger className="w-full border-0 focus:ring-0 rounded-none h-11 text-gray-600 font-medium">
                     <SelectValue placeholder="Products / Services" />
