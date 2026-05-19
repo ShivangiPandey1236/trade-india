@@ -12,9 +12,9 @@ function App() {
       <Header />
       
       {/* Main Landing Area */}
-      <main className="flex-1 container mx-auto px-4 py-6 max-w-7xl">
+      <main className="flex-1 p-4 w-full">
         {/* Top Section: Sidebar + Hero + Promos */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-stretch">
           {/* Sidebar Left Column */}
           <div className="md:col-span-4 lg:col-span-3 h-full order-3 md:order-1 lg:order-1">
             <Sidebar />
@@ -26,9 +26,10 @@ function App() {
           </div>
 
           {/* Promo CTAs Right Column */}
-          <div className="md:col-span-12 lg:col-span-3 h-full order-2 md:order-3 lg:order-3">
+          <div className="md:col-span-12 lg:col-span-3 order-2 md:order-3 lg:order-3">
             <PromoCards />
           </div>
+
         </div>
 
         {/* Bottom Section: Value Adds */}

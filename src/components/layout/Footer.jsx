@@ -69,8 +69,8 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="w-full bg-white border-t border-gray-200 mt-16 font-sans">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+    <footer className="w-full bg-white border-t border-gray-200 mt-8 font-sans">
+      <div className="w-full  px-4 py-12">
         {/* Top: 6 Columns Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
           {footerSections.map((section, idx) => (

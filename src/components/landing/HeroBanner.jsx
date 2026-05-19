@@ -18,7 +18,7 @@ export default function HeroBanner() {
   }, [])
 
   return (
-    <div className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[480px] bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-800 relative group">
+    <div className="w-full h-[220px] sm:h-[300px] md:h-[380px] lg:h-[400px] bg-slate-900 rounded-xl overflow-hidden shadow-sm border border-slate-800 relative group">
       {/* Slide Images Container */}
       <div className="relative w-full h-full">
         {images.map((image, idx) => (
