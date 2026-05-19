@@ -15,12 +15,12 @@ function App() {
         {/* Top Section: Sidebar + Hero + Promos */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
           {/* Sidebar Left Column */}
-          <div className="md:col-span-4 lg:col-span-2 h-full">
+          <div className="md:col-span-4 lg:col-span-3 h-full">
             <Sidebar />
           </div>
 
           {/* Hero Banner Center Column */}
-          <div className="md:col-span-8 lg:col-span-7 h-full">
+          <div className="md:col-span-8 lg:col-span-6 h-full">
             <HeroBanner />
           </div>
 

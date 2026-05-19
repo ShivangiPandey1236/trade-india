@@ -35,7 +35,7 @@ const categories = [
 
 export default function Sidebar() {
   return (
-    <aside className="w-full md:w-64 bg-white border border-gray-200 rounded-xl p-4 shadow-sm h-full flex flex-col justify-between">
+    <aside className="w-full bg-white border border-gray-200 rounded-xl p-4 shadow-sm h-full flex flex-col justify-between">
       <div>
         <h3 className="text-lg font-bold text-slate-800 mb-3 border-b border-gray-100 pb-2">
           Top Categories
