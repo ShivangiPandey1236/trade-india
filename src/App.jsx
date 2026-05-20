@@ -3,6 +3,7 @@ import Sidebar from './components/landing/Sidebar'
 import HeroBanner from './components/landing/HeroBanner'
 import PromoCards from './components/landing/PromoCards'
 import ValueAdds from './components/landing/ValueAdds'
+import BestSellers from './components/landing/BestSellers'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -41,6 +42,11 @@ function App() {
           </div>
         </div>
       </main>
+
+      {/* Best Sellers Section */}
+            <div className="w-full p-4">
+              <BestSellers />
+            </div>
 
       {/* Footer Element */}
       <Footer />
