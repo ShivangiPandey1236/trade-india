@@ -81,7 +81,7 @@ export default function Header() {
 
             {/* Mobile Post Buy CTA */}
             <div className="lg:hidden shrink-0">
-              <Button size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full bg-destructive hover:bg-destructive/95 text-white font-semibold text-xs shadow transition-all">
+              <Button size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full bg-destructive  text-white font-semibold text-xs shadow transition-all">
                 Post Req
               </Button>
             </div>

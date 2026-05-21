@@ -6,6 +6,7 @@ import ValueAdds from './components/landing/ValueAdds'
 import BestSellers from './components/landing/BestSellers'
 import TrendingCategories from './components/landing/TrendingCategories'
 import ApparelFashion from './components/landing/ApparelFashion'
+import PostBuyRequirement from './components/landing/PostBuyRequirement'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -57,6 +58,11 @@ function App() {
       {/* Apparel & Fashion Section */}
       <div className="w-full p-4 pt-0">
         <ApparelFashion />
+      </div>
+
+      {/* Post Buy Requirement Section */}
+      <div className="w-full p-4 pt-0">
+        <PostBuyRequirement />
       </div>
 
       {/* Footer Element */}
