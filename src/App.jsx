@@ -4,6 +4,7 @@ import HeroBanner from './components/landing/HeroBanner'
 import PromoCards from './components/landing/PromoCards'
 import ValueAdds from './components/landing/ValueAdds'
 import BestSellers from './components/landing/BestSellers'
+import TrendingCategories from './components/landing/TrendingCategories'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -11,7 +12,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
       <Header />
-      
+
       {/* Main Landing Area */}
       <main className="flex-1 p-4 w-full">
         <div className="flex flex-col lg:flex-row gap-4 w-full items-stretch">
@@ -44,9 +45,13 @@ function App() {
       </main>
 
       {/* Best Sellers Section */}
-            <div className="w-full p-4">
-              <BestSellers />
-            </div>
+      <div className="w-full p-4 ">
+        <BestSellers />
+      </div>
+      {/* Trending Categories */}
+      <div className="w-full p-4 ">
+        <TrendingCategories />
+      </div>
 
       {/* Footer Element */}
       <Footer />

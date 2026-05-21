@@ -1,6 +1,6 @@
 import imgAgricultural from "../assets/Agricultural-Machines-Tools-11.jpg"
 import imgAirCooler from "../assets/Air-Cooler-1317.jpg"
-import imgCoolingTower from "../assets/Cooling-Tower-Chilling-Plants-530.jpg"
+import imgCoolingTower from "../assets/Cooling-Tower-Chilling-Plants-530 (1).jpg"
 import imgFan from "../assets/Fan-298.jpg"
 import imgHumanHair from "../assets/Human-Hair-Accessories-772.jpg"
 import imgLedProducts from "../assets/LED-Products-1661.jpg"

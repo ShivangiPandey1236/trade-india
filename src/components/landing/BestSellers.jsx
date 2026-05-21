@@ -69,11 +69,11 @@ export default function BestSellers() {
 
       {/* Main Banner Container */}
       <div className="relative w-full rounded-[24px] bg-gradient-to-br from-[#f15a24] via-[#e65c00] to-[#d44817] p-6 sm:p-8 shadow-xl overflow-hidden border border-orange-500/20">
-        
+
         {/* Background Decorative Elements */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl pointer-events-none transform translate-x-12 -translate-y-12" />
         <div className="absolute bottom-0 left-0 w-80 h-80 bg-black/5 rounded-full blur-3xl pointer-events-none transform -translate-x-20 translate-y-20" />
-        
+
         {/* Header Row */}
         <div className="flex justify-between items-center mb-6 relative z-10">
           <div>
@@ -191,7 +191,7 @@ export default function BestSellers() {
         {/* Mobile Swipe Indicator Dots (visible on mobile/tablet) */}
         <div className="flex md:hidden justify-center space-x-1.5 mt-4 relative z-10">
           <div className="h-1 bg-white/20 w-24 rounded-full overflow-hidden">
-            <div 
+            <div
               className="h-full bg-white transition-all duration-75"
               style={{
                 width: `${Math.max(15, Math.min(100, scrollPercent))}%`
