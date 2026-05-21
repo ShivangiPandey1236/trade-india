@@ -5,6 +5,7 @@ import PromoCards from './components/landing/PromoCards'
 import ValueAdds from './components/landing/ValueAdds'
 import BestSellers from './components/landing/BestSellers'
 import TrendingCategories from './components/landing/TrendingCategories'
+import ApparelFashion from './components/landing/ApparelFashion'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -51,6 +52,11 @@ function App() {
       {/* Trending Categories */}
       <div className="w-full p-4 ">
         <TrendingCategories />
+      </div>
+      
+      {/* Apparel & Fashion Section */}
+      <div className="w-full p-4 pt-0">
+        <ApparelFashion />
       </div>
 
       {/* Footer Element */}
