@@ -9,6 +9,7 @@ import ApparelFashion from './components/landing/ApparelFashion'
 import PostBuyRequirement from './components/landing/PostBuyRequirement'
 import SellersByCities from './components/landing/SellersByCities'
 import RecentBlogs from './components/landing/RecentBlogs'
+import Testimonials from './components/landing/Testimonials'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -75,6 +76,11 @@ function App() {
       {/* Recent Blogs Section */}
       <div className="w-full p-4 pt-0">
         <RecentBlogs />
+      </div>
+
+      {/* Testimonials Section */}
+      <div className="w-full p-4 pt-0">
+        <Testimonials />
       </div>
 
       {/* Footer Element */}
