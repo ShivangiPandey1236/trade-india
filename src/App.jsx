@@ -11,6 +11,7 @@ import SellersByCities from './components/landing/SellersByCities'
 import RecentBlogs from './components/landing/RecentBlogs'
 import Testimonials from './components/landing/Testimonials'
 import TopCategories from './components/landing/TopCategories'
+import PopularProducts from './components/landing/PopularProducts'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -87,6 +88,11 @@ function App() {
       {/* Top Categories Section */}
       <div className="w-full p-4 pt-0">
         <TopCategories />
+      </div>
+
+      {/* Popular Products Section */}
+      <div className="w-full p-4 pt-0">
+        <PopularProducts />
       </div>
 
       {/* Footer Element */}

@@ -70,7 +70,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full bg-white border-t border-gray-200 mt-8 font-sans">
-      <div className="w-full  px-4 py-12">
+      <div className="w-full  px-6 py-12">
         {/* Top: 6 Columns Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-12">
           {footerSections.map((section, idx) => (
@@ -82,16 +82,16 @@ export default function Footer() {
                 {section.links.map((link, lIdx) => (
                   <li key={lIdx}>
                     {link.isPill ? (
-                      <a 
-                        href={link.href} 
+                      <a
+                        href={link.href}
                         className="inline-flex items-center px-3 py-1 rounded-md border border-slate-300 hover:border-slate-800 text-xs font-bold text-slate-800 hover:bg-slate-50 transition-all uppercase tracking-wider shadow-sm mt-1"
                       >
                         {link.label}
                         <ArrowUpRight className="w-3.5 h-3.5 ml-1 stroke-[2.5]" />
                       </a>
                     ) : (
-                      <a 
-                        href={link.href} 
+                      <a
+                        href={link.href}
                         className="text-xs font-semibold text-gray-500 hover:text-primary transition-colors hover:underline underline-offset-4"
                       >
                         {link.label}
@@ -157,38 +157,38 @@ export default function Footer() {
           <div className="flex items-center space-x-4">
             <span className="text-sm font-extrabold text-slate-800 tracking-tight">Connect with us</span>
             <div className="flex items-center space-x-2">
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-8 h-8 rounded-full bg-destructive hover:bg-destructive/95 text-white flex items-center justify-center shadow hover:shadow-md transition-all transform hover:scale-105"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z"/>
+                  <path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c4.56-.93 8-4.96 8-9.75z" />
                 </svg>
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-8 h-8 rounded-full bg-destructive hover:bg-destructive/95 text-white flex items-center justify-center shadow hover:shadow-md transition-all transform hover:scale-105"
                 aria-label="LinkedIn"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                 </svg>
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-8 h-8 rounded-full bg-destructive hover:bg-destructive/95 text-white flex items-center justify-center shadow hover:shadow-md transition-all transform hover:scale-105 font-bold italic text-sm select-none"
                 aria-label="X"
               >
                 𝕏
               </a>
-              <a 
-                href="#" 
+              <a
+                href="#"
                 className="w-8 h-8 rounded-full bg-destructive hover:bg-destructive/95 text-white flex items-center justify-center shadow hover:shadow-md transition-all transform hover:scale-105"
                 aria-label="YouTube"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.388.555A3.002 3.002 0 0 0 .503 6.163C0 8.037 0 12 0 12s0 3.963.502 5.837a3.002 3.002 0 0 0 2.11 2.108C4.48 20.5 12 20.5 12 20.5s7.52 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.963 24 12 24 12s0-3.963-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.388.555A3.002 3.002 0 0 0 .503 6.163C0 8.037 0 12 0 12s0 3.963.502 5.837a3.002 3.002 0 0 0 2.11 2.108C4.48 20.5 12 20.5 12 20.5s7.52 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.963 24 12 24 12s0-3.963-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                 </svg>
               </a>
             </div>
