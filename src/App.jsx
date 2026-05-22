@@ -10,6 +10,7 @@ import PostBuyRequirement from './components/landing/PostBuyRequirement'
 import SellersByCities from './components/landing/SellersByCities'
 import RecentBlogs from './components/landing/RecentBlogs'
 import Testimonials from './components/landing/Testimonials'
+import TopCategories from './components/landing/TopCategories'
 import FloatingChat from './components/landing/FloatingChat'
 import Footer from './components/layout/Footer'
 
@@ -81,6 +82,11 @@ function App() {
       {/* Testimonials Section */}
       <div className="w-full p-4 pt-0">
         <Testimonials />
+      </div>
+
+      {/* Top Categories Section */}
+      <div className="w-full p-4 pt-0">
+        <TopCategories />
       </div>
 
       {/* Footer Element */}
