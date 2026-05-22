@@ -36,4 +36,31 @@ export const sellersByCitiesData = [
     name: "Bengaluru",
     image: imgBengaluru,
   },
+  {
+    id: 6,
+    name: "Bengaluru",
+    image: imgBengaluru,
+  },
+  {
+    id: 6,
+    name: "Bengaluru",
+    image: imgBengaluru,
+  },
+  {
+    id: 6,
+    name: "Bengaluru",
+    image: imgBengaluru,
+  },
+  {
+    id: 6,
+    name: "Bengaluru",
+    image: imgBengaluru,
+  },
+  {
+    id: 6,
+    name: "Bengaluru",
+    image: imgBengaluru,
+  },
+  
+  
 ];
