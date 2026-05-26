@@ -3,7 +3,7 @@ import { apparelFashionData } from "../../data/apparelFashion"
 export default function ApparelFashion() {
   return (
     <section className="w-full mt-2 relative p-4 sm:p-6 bg-white rounded-xl shadow-sm border border-gray-100">
-      <h3 className="text-xl sm:text-[22px] font-bold text-[#12a2f0] mb-4 sm:mb-6">
+      <h3 className="text-xl sm:text-[22px] font-bold text-[#0E63F3] mb-4 sm:mb-6">
         Apparel & Fashion
       </h3>
 

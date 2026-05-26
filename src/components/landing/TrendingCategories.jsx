@@ -57,7 +57,7 @@ export default function TrendingCategories() {
         }
       `}</style>
       
-      <h3 className="text-xl sm:text-[22px] font-bold text-[#12a2f0] mb-4 sm:mb-6">
+      <h3 className="text-xl sm:text-[22px] font-bold text-[#0E63F3] mb-4 sm:mb-6">
         Trending Categories
       </h3>
 
