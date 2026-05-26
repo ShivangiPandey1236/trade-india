@@ -1,3 +1,4 @@
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -9,8 +10,10 @@ import {
 } from "@/components/ui/select"
 import { ChevronDown, Headset, Store, User, UserCircle, Search } from "lucide-react"
 import logo from "@/assets/utpaad-n.png"
+import PostBuyReqModal from "@/components/shared/PostBuyReqModal"
 
 export default function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <header className="w-full font-sans">
       {/* Top Bar */}
@@ -68,7 +71,7 @@ export default function Header() {
 
             {/* Mobile Post Buy CTA */}
             <div className="lg:hidden shrink-0">
-              <Button size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full bg-destructive  text-white font-semibold text-xs shadow transition-all">
+              <Button onClick={() => setIsModalOpen(true)} size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full bg-destructive  text-white font-semibold text-xs shadow transition-all">
                 Post Req
               </Button>
             </div>
@@ -104,12 +107,14 @@ export default function Header() {
 
           {/* Desktop Action Button */}
           <div className="hidden lg:block shrink-0">
-            <Button className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all ">
+            <Button onClick={() => setIsModalOpen(true)} className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all ">
               Post Buy Requirement
             </Button>
           </div>
         </div>
       </div>
+      
+      <PostBuyReqModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   )
 }
