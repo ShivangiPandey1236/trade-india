@@ -125,8 +125,8 @@ export default function Footer() {
           <div className="flex items-center space-x-6">
             <div className="flex flex-col select-none">
               <div className="flex items-baseline">
-                <span className="text-2xl font-black text-primary tracking-tighter">trade</span>
-                <span className="text-2xl font-black text-destructive tracking-tighter">india</span>
+                <span className="text-2xl font-black text-primary tracking-tighter">profito</span>
+                <span className="text-2xl font-black text-destructive tracking-tighter">interactive</span>
                 <span className="text-xl font-extrabold text-primary">.com</span>
               </div>
               <span className="text-[9px] text-gray-400 font-bold uppercase tracking-wider mt-[-2px]">
