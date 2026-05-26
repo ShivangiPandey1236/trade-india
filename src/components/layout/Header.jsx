@@ -8,7 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { ChevronDown, Headset, Store, User, UserCircle, Search } from "lucide-react"
-import logo from "@/assets/logo-pr.png"
+import logo from "@/assets/utpaad-n.png"
 
 export default function Header() {
   return (
@@ -76,7 +76,7 @@ export default function Header() {
 
           {/* Search Bar */}
           <div className="w-full lg:flex-1 lg:max-w-3xl flex px-0 lg:px-4">
-            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm h-10 sm:h-11 items-center bg-white">
+            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm h-10 sm:h-11 items-stretch bg-white">
               {/* Category selector - hidden on mobile, visible on sm and up */}
               <div className="hidden sm:flex w-40 h-full border-r border-gray-200 bg-gray-50/50 items-center shrink-0">
                 <Select defaultValue="Products / Services">
@@ -95,7 +95,7 @@ export default function Header() {
                 placeholder="Search products, brands or services..." 
                 className="flex-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:ring-0 shadow-none rounded-none h-full px-3 sm:px-4 text-slate-700 placeholder-gray-400 text-xs sm:text-sm outline-none bg-transparent"
               />
-              <Button className="rounded-none h-full px-4 sm:px-8 bg-primary hover:bg-primary/95 text-primary-foreground font-bold transition-all shrink-0 text-sm flex items-center justify-center cursor-pointer">
+              <Button className="border-0 py-0 leading-none rounded-none h-full px-4 sm:px-8 bg-primary hover:bg-primary/95 text-primary-foreground font-bold transition-all shrink-0 text-sm flex items-center justify-center cursor-pointer">
                 <Search className="w-4.5 h-4.5 sm:hidden" />
                 <span className="hidden sm:inline">Search</span>
               </Button>
@@ -104,7 +104,7 @@ export default function Header() {
 
           {/* Desktop Action Button */}
           <div className="hidden lg:block shrink-0">
-            <Button className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all">
+            <Button className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all ">
               Post Buy Requirement
             </Button>
           </div>
