@@ -8,6 +8,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import { ChevronDown, Headset, Store, User, UserCircle, Search } from "lucide-react"
+import logo from "@/assets/logo-pr.png"
 
 export default function Header() {
   return (
@@ -62,21 +63,7 @@ export default function Header() {
           <div className="flex items-center justify-between w-full lg:w-auto">
             {/* Logo */}
             <div className="flex items-center flex-shrink-0 select-none">
-              {/* Fake logo icon */}
-              <div className="relative flex items-center justify-center mr-1.5 sm:mr-2">
-                <span className="text-3xl sm:text-4xl italic font-black text-primary leading-none">e</span>
-                <div className="w-1.5 sm:w-2 h-1.5 sm:h-2 rounded-full bg-destructive absolute top-0.5 sm:top-1 right-[-3px] sm:right-[-4px]"></div>
-              </div>
-              <div className="flex flex-col">
-                <div className="flex items-baseline">
-                  <span className="text-xl sm:text-2xl font-black text-primary tracking-tight">Exporters</span>
-                  <span className="text-xl sm:text-2xl font-black text-destructive tracking-tight">India</span>
-                  <span className="text-lg sm:text-xl font-bold text-primary tracking-tight">.com</span>
-                </div>
-                <span className="hidden sm:block text-[9px] text-gray-400 font-bold uppercase tracking-wider mt-[-2px]">
-                  Largest Searchable B2B Marketplace
-                </span>
-              </div>
+              <img src={logo} alt="Trade India Logo" className="h-10 sm:h-12 w-auto object-contain" />
             </div>
 
             {/* Mobile Post Buy CTA */}
