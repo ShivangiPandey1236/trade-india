@@ -22,7 +22,7 @@ export default function PostBuyRequirement() {
         {/* Logo Text - top right of form */}
         <div className="absolute top-0 right-0 hidden sm:flex flex-col items-end">
           <div className="text-2xl font-black tracking-tighter flex items-center">
-            <span className="text-[#e23c40]">profito</span>
+            <span className="text-[#12a2f0]">profito</span>
             <span className="text-[#fdb813] ml-1 flex items-start">
               interactive<span className="text-[#e23c40] text-xs">.</span>
             </span>

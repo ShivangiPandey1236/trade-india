@@ -80,7 +80,7 @@ export default function BestSellers() {
             <div className="flex items-center space-x-2">
               <Award className="w-6 h-6 text-yellow-300 animate-bounce-subtle" />
               <h3 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
-                Best Sellers
+                Featured Products
               </h3>
             </div>
             <p className="text-orange-100 text-xs sm:text-sm mt-1 font-medium">
