@@ -125,9 +125,7 @@ export default function Footer() {
           <div className="flex items-center space-x-6">
             <div className="flex flex-col select-none">
               <div className="flex items-baseline">
-                <span className="text-2xl font-black text-primary tracking-tighter">profito</span>
-                <span className="text-2xl font-black text-destructive tracking-tighter">interactive</span>
-                <span className="text-xl font-extrabold text-primary">.com</span>
+                <span className="text-2xl font-black tracking-tighter bg-gradient-to-r from-[#004de6] from-[40%] to-[#ff8000] to-[55%] text-transparent bg-clip-text">Utpaad</span>
               </div>
               <span className="text-[9px] text-gray-400 font-bold uppercase tracking-wider mt-[-2px]">
                 Global B2B Market
