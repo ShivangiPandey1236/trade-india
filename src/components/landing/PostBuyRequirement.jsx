@@ -22,7 +22,7 @@ export default function PostBuyRequirement() {
         {/* Logo Text - top right of form */}
         <div className="absolute top-0 right-0 hidden sm:flex flex-col items-end">
           <div className="text-2xl font-black tracking-tighter flex items-center">
-            <span className="text-[#FF8500]">Utpaad</span>
+            <span className="bg-gradient-to-r from-[#004de6] from-[40%] to-[#ff8000] to-[55%] text-transparent bg-clip-text">Utpaad</span>
           </div>
         </div>
 

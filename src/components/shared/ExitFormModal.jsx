@@ -2,13 +2,13 @@ import { useState } from "react"
 import { ChevronDown, ArrowRight, X } from "lucide-react"
 import pbrBanner from "../../assets/pbr-utpaad.png"
 
-export default function PostBuyReqModal({ isOpen, onClose }) {
+export default function ExitFormModal({ isOpen, onClose }) {
   const [loanInterest, setLoanInterest] = useState(null)
 
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 sm:p-6 font-sans">
+    <div className="fixed inset-0 z-[200] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 sm:p-6 font-sans">
       <div className="bg-[#fcf9f5] w-full max-w-5xl rounded-2xl shadow-2xl relative flex flex-col md:flex-row items-stretch overflow-hidden animate-in fade-in zoom-in-95 duration-200 max-h-[90vh] overflow-y-auto">
         
         {/* Close Button */}
@@ -23,7 +23,7 @@ export default function PostBuyReqModal({ isOpen, onClose }) {
         <div className="w-full md:w-5/12 bg-white flex items-center justify-center p-6 relative min-h-[200px] md:min-h-[400px]">
           <img 
             src={pbrBanner} 
-            alt="Post Buy Requirement" 
+            alt="Requirement" 
             className="max-w-full h-auto object-contain"
           />
         </div>
@@ -37,11 +37,11 @@ export default function PostBuyReqModal({ isOpen, onClose }) {
           </div>
 
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-900 mb-2 mt-4 sm:mt-0">
-            Post Buy Requirement
+            Wait! Before you leave...
           </h2>
           
           <p className="text-gray-700 text-sm sm:text-base mb-6">
-            Tell us what you need, and we'll help you get quotes
+            Tell us what you need, and we'll help you get quick quotes.
           </p>
 
           {/* Progress Bar */}
@@ -63,7 +63,7 @@ export default function PostBuyReqModal({ isOpen, onClose }) {
               />
             </div>
 
-            {/* Email Input (Added) */}
+            {/* Email Input */}
             <div>
               <input 
                 type="email" 
@@ -160,7 +160,7 @@ export default function PostBuyReqModal({ isOpen, onClose }) {
                 type="button"
                 className="bg-[#316c90] hover:bg-[#255472] text-white text-sm sm:text-base font-semibold py-3 px-8 rounded-lg flex items-center gap-2 transition-all shadow-md active:scale-95 cursor-pointer"
               >
-                Continue
+                Submit
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
               </button>
             </div>
