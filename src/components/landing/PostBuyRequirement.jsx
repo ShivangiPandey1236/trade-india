@@ -140,7 +140,7 @@ export default function PostBuyRequirement() {
           <div className="mt-4 flex justify-end">
             <button 
               type="button"
-              className="bg-[#316c90] hover:bg-[#255472] text-white text-sm font-semibold py-2.5 px-6 rounded-md flex items-center gap-2 transition-colors cursor-pointer"
+              className="bg-[linear-gradient(135deg,#0A34C9_0%,#0E63F3_30%,#4F8EFF_45%,#FF9A2F_65%,#FF8500_85%,#FF7300_100%)] hover:opacity-90 border-0 text-white text-sm font-semibold py-2.5 px-6 rounded-md flex items-center gap-2 transition-opacity cursor-pointer"
             >
               Continue
               <ArrowRight className="w-4 h-4" />

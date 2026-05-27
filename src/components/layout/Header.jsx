@@ -25,7 +25,7 @@ export default function Header() {
             <Button variant="outline" size="sm" className="h-7 text-primary border-primary hover:bg-primary/10 hover:text-primary px-3 py-0">
               Sign In
             </Button>
-            <Button size="sm" className="h-7 bg-primary hover:bg-primary/90 text-primary-foreground px-3 py-0">
+            <Button size="sm" className="h-7 px-3 py-0">
               Join Free
             </Button>
           </div>
@@ -71,7 +71,7 @@ export default function Header() {
 
             {/* Mobile Post Buy CTA */}
             <div className="lg:hidden shrink-0">
-              <Button onClick={() => setIsModalOpen(true)} size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full bg-destructive  text-white font-semibold text-xs shadow transition-all">
+              <Button onClick={() => setIsModalOpen(true)} size="sm" className="h-8 sm:h-9 px-3 sm:px-4 rounded-full font-semibold text-xs shadow transition-all">
                 Post Req
               </Button>
             </div>
@@ -98,7 +98,7 @@ export default function Header() {
                 placeholder="Search products, brands or services..." 
                 className="flex-1 border-0 focus-visible:ring-0 focus-visible:ring-offset-0 focus:ring-0 shadow-none rounded-none h-full px-3 sm:px-4 text-slate-700 placeholder-gray-400 text-xs sm:text-sm outline-none bg-transparent"
               />
-              <Button className="border-0 py-0 leading-none rounded-none h-full px-4 sm:px-8 bg-primary hover:bg-primary/95 text-primary-foreground font-bold transition-all shrink-0 text-sm flex items-center justify-center cursor-pointer">
+              <Button className="border-0 py-0 leading-none rounded-none h-full px-4 sm:px-8 font-bold transition-all shrink-0 text-sm flex items-center justify-center cursor-pointer">
                 <Search className="w-4.5 h-4.5 sm:hidden" />
                 <span className="hidden sm:inline">Search</span>
               </Button>
@@ -107,7 +107,7 @@ export default function Header() {
 
           {/* Desktop Action Button */}
           <div className="hidden lg:block shrink-0">
-            <Button onClick={() => setIsModalOpen(true)} className="h-11 px-6 rounded-full bg-destructive hover:bg-destructive/90 text-destructive-foreground font-medium text-base shadow-md transition-all ">
+            <Button onClick={() => setIsModalOpen(true)} className="h-11 px-6 rounded-full font-medium text-base shadow-md transition-all ">
               Post Buy Requirement
             </Button>
           </div>
