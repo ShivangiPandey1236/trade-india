@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { 
   Heart, 
   Shirt, 
@@ -62,12 +63,12 @@ export default function Sidebar() {
       </div>
       
       <div className="mt-4 pt-3 border-t border-gray-100">
-        <a 
-          href="#" 
+        <Link 
+          to="/products" 
           className="text-sm font-semibold text-amber-600 hover:text-amber-700 transition-colors inline-flex items-center"
         >
           View all Categories
-        </a>
+        </Link>
       </div>
     </aside>
   )
