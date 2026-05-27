@@ -1,4 +1,3 @@
-
 import Sidebar from '../components/landing/Sidebar'
 import HeroBanner from '../components/landing/HeroBanner'
 import PromoCards from '../components/landing/PromoCards'

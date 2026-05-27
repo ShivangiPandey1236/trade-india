@@ -6,6 +6,8 @@ import { ExitFormProvider } from './context/ExitFormContext'
 
 import Home from './pages/Home'
 import Products from './pages/Products'
+import CategoryProducts from './pages/CategoryProducts'
+import ProductDetails from './pages/ProductDetails'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:categoryId" element={<CategoryProducts />} />
+            <Route path="/products/:categoryId/:productId" element={<ProductDetails />} />
           </Routes>
         </div>
 
