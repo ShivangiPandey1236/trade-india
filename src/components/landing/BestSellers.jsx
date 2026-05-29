@@ -179,7 +179,7 @@ export default function BestSellers() {
 
               {/* Inquiry Action Call */}
               <div className="mt-4 pt-1 flex items-center gap-2">
-                <button className="flex-1 bg-[linear-gradient(135deg,#0A34C9_0%,#0E63F3_30%,#4F8EFF_45%,#FF9A2F_65%,#FF8500_85%,#FF7300_100%)] hover:opacity-90 text-white border-0 text-xs font-extrabold py-2.5 rounded-xl transition-all duration-300 flex items-center justify-center space-x-1.5 hover:shadow-md cursor-pointer group/btn">
+                <button className="flex-1 bg-[linear-gradient(135deg,#0A34C9_0%,#0E63F3_30%,#4F8EFF_45%,#FF9A2F_65%,#FF8500_85%,#FF7300_100%)] hover:opacity-90 text-white border-0 text-xs font-extrabold py-2.5 rounded-full transition-all duration-300 flex items-center justify-center space-x-1.5 hover:shadow-md cursor-pointer group/btn">
                   <Send className="w-3.5 h-3.5 transform group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform duration-200" />
                   <span>Send Inquiry</span>
                 </button>

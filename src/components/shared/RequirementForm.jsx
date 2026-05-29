@@ -140,7 +140,7 @@ export default function RequirementForm({ buttonText = "Submit", onSubmitSuccess
       <div className="mt-5 flex justify-end">
         <button 
           type="submit"
-          className="bg-[linear-gradient(135deg,#0A34C9_0%,#0E63F3_30%,#4F8EFF_45%,#FF9A2F_65%,#FF8500_85%,#FF7300_100%)] hover:opacity-90 border-0 text-white text-sm sm:text-base font-semibold py-3 px-8 rounded-lg flex items-center gap-2 transition-all shadow-md active:scale-95 cursor-pointer"
+          className="bg-[linear-gradient(135deg,#0A34C9_0%,#0E63F3_30%,#4F8EFF_45%,#FF9A2F_65%,#FF8500_85%,#FF7300_100%)] hover:opacity-90 border-0 text-white text-sm sm:text-base font-semibold py-3 px-8 rounded-full flex items-center gap-2 transition-all shadow-md active:scale-95 cursor-pointer"
         >
           {buttonText}
           <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />

@@ -20,6 +20,19 @@ const ProductDetails = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [quantity, setQuantity] = useState(product.minPackSize || 1);
 
+  const demoRelatedProducts = [
+    { id: 'rp-1', name: 'Ax 130 Backhoe Loaders - Color: Yellow', price: '2300000', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=201', seller: { companyName: 'Action Construction Equipment Ltd.', location: 'Faridabad, Haryana' } },
+    { id: 'rp-2', name: 'Backhoe Loader Bucket - Automatic Grade: Manual', price: '120000.0', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=202', seller: { companyName: 'W G Enterprises Private Limited', location: 'Faridabad, Haryana' } },
+    { id: 'rp-3', name: 'Excavator Backhoe Loader Bushs - Color: Silver', price: null, minPackSize: '100', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=203', seller: { companyName: 'Das Fabricators', location: 'Faridabad, Haryana' } },
+    { id: 'rp-4', name: 'Cat424B Backhoe Loaders Spare Parts - Black Finish,...', price: null, minPackSize: '10', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=204', seller: { companyName: 'Rk Trading', location: 'Faridabad, Haryana' } },
+    { id: 'rp-5', name: 'Mini Backhoe Loader - 1400 Kg Weight, Red & Yellow...', price: '550000', currency: 'INR', minPackSize: '5', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=205', seller: { companyName: 'Sai Hydraulics And Earthmovers...', location: 'Faridabad, Haryana' } },
+    { id: 'rp-6', name: 'Jcb Seat Cover - Color: Black', price: '490.0', currency: 'INR', minPackSize: '25', unit: 'Set/Sets', image: 'https://picsum.photos/400/300?random=206', seller: { companyName: 'R. V. Enterprises', location: 'Faridabad, Haryana' } },
+    { id: 'rp-7', name: 'Engine Fuel Pipe Backhoe Loader 3CX/4CX/3DX...', price: '328.00', currency: 'INR', minPackSize: '50', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=207', seller: { companyName: 'Durga Engineers', location: 'Faridabad, Haryana' } },
+    { id: 'rp-8', name: 'High Dump Backhoe Loader Warranty: Standard', price: null, minPackSize: null, image: 'https://picsum.photos/400/300?random=208', seller: { companyName: 'Sec-rjmt Engineering Pvt. Ltd.', location: 'Faridabad, Haryana' } },
+    { id: 'rp-9', name: 'Heavy Duty Tractor Attachment Backhoe Loaders', price: null, minPackSize: null, image: 'https://picsum.photos/400/300?random=209', seller: { companyName: 'Ab Excavators & Earthmovers P...', location: 'Faridabad, Haryana' } },
+    { id: 'rp-10', name: 'JCB Backhoe Loader Bucket Bush - Polished Mild Steel,...', price: '80', currency: 'INR', minPackSize: '350', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=210', seller: { companyName: 'R N Industries', location: 'Faridabad, Haryana' } }
+  ];
+
   return (
     <div className="flex-1 p-4 md:p-8 w-full max-w-[1400px] mx-auto animate-fade-in-up">
       {/* Breadcrumbs */}
@@ -33,8 +46,12 @@ const ProductDetails = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         
-        {/* LEFT COLUMN: Images */}
-        <div className="col-span-12 lg:col-span-4 flex flex-col">
+        {/* LEFT AND MIDDLE AREA WRAPPER */}
+        <div className="col-span-12 lg:col-span-9 flex flex-col gap-12">
+          
+          <div className="grid grid-cols-1 lg:grid-cols-9 gap-8">
+            {/* LEFT COLUMN: Images */}
+            <div className="col-span-12 lg:col-span-4 flex flex-col">
           <div className="border border-border p-4 bg-white flex items-center justify-center mb-4 min-h-[400px] relative group">
             <img 
               src={selectedImage} 
@@ -141,10 +158,65 @@ const ProductDetails = () => {
               </div>
             </div>
           )}
+            </div>
+          </div>
+
+          {/* Related Products Section */}
+          <div className="mb-4">
+            <h2 className="text-[22px] font-bold text-primary mb-6">Related Products</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+              {demoRelatedProducts.map((relatedProduct) => (
+                <Card key={relatedProduct.id} className="border border-[#cbd5e1] rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col bg-white overflow-hidden">
+                  <CardContent className="p-4 flex flex-col h-full gap-2">
+                    <div className="h-[140px] flex items-center justify-center mb-2">
+                      <img src={relatedProduct.image} alt={relatedProduct.name} className="max-h-full max-w-full object-contain" />
+                    </div>
+                    
+                    <h3 className="text-[#3b3db9] text-[15px] font-medium leading-[1.3] line-clamp-2 min-h-[39px]">
+                      {relatedProduct.name}
+                    </h3>
+                    
+                    {relatedProduct.price ? (
+                      <div className="text-[14px]">
+                        <span className="font-bold text-foreground">Price: {relatedProduct.price} {relatedProduct.currency}</span>
+                      </div>
+                    ) : (
+                      <div className="h-[21px]"></div>
+                    )}
+                    
+                    {relatedProduct.minPackSize && (
+                      <div className="text-[13px] text-[#64748b]">
+                        MOQ - {relatedProduct.minPackSize} {relatedProduct.unit}
+                      </div>
+                    )}
+                    
+                    {relatedProduct.seller && (
+                      <div className="mt-auto pt-1 flex flex-col gap-1.5">
+                        <div className="text-[13px] text-[#64748b] line-clamp-1">
+                          {relatedProduct.seller.companyName}
+                        </div>
+                        <div className="flex items-start gap-1.5 text-[13px] text-[#64748b] mb-3">
+                          <MapPin className="w-4 h-4 flex-shrink-0" />
+                          <span className="line-clamp-1">{relatedProduct.seller.location}</span>
+                        </div>
+                      </div>
+                    )}
+                    
+                    <div className="mt-auto">
+                      <Button className="w-full rounded-lg bg-[#336b92] hover:bg-[#275a89] text-white h-10 text-[14px] font-medium shadow-sm">
+                        Send Inquiry
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+          
         </div>
 
         {/* RIGHT COLUMN: Seller Details */}
-        <div className="col-span-12 lg:col-span-3">
+        <div className="col-span-12 lg:col-span-3 flex flex-col gap-6 lg:sticky lg:top-24 lg:self-start">
           <Card className="bg-muted/10 border-border rounded-xl shadow-sm">
             <CardContent className="p-5">
               <h3 className="text-lg font-semibold mb-4 text-foreground border-b border-border pb-3">Seller Details</h3>
@@ -212,6 +284,66 @@ const ProductDetails = () => {
                   </div>
                 </>
               )}
+            </CardContent>
+          </Card>
+
+          {/* Lead Form Card */}
+          <Card className="border-border rounded-xl shadow-sm mb-6">
+            <CardContent className="p-6">
+              <h3 className="text-primary text-[26px] font-bold mb-4 tracking-tight">Get Best Price for</h3>
+              <p className="text-foreground text-[17px] mb-6">
+                {product.name}
+              </p>
+
+              <div className="border border-[#cbd5e1] rounded-xl p-4 mb-6 bg-white">
+                <textarea 
+                  className="w-full min-h-[80px] text-[16px] text-foreground focus:outline-none resize-none bg-transparent"
+                  defaultValue={`Hi, I am interested in ${product.name}.`}
+                ></textarea>
+              </div>
+
+              <div className="mb-6">
+                <label className="block text-[15px] sm:text-[17px] text-foreground mb-4">Requirement Frequency</label>
+                <div className="flex items-center gap-4 sm:gap-6">
+                  <label className="flex items-center gap-2 cursor-pointer group">
+                    <div className="w-5 h-5 rounded-full border-2 border-[#f97316] flex items-center justify-center bg-white flex-shrink-0">
+                      <div className="w-2.5 h-2.5 rounded-full bg-[#f97316]"></div>
+                    </div>
+                    <input type="radio" name="frequency" className="hidden" defaultChecked />
+                    <span className="text-[15px] sm:text-[17px] text-foreground">One-Time</span>
+                  </label>
+                  <label className="flex items-center gap-2 cursor-pointer group">
+                    <div className="w-5 h-5 rounded-full border border-[#94a3b8] flex items-center justify-center bg-white group-hover:border-[#64748b] transition-colors flex-shrink-0">
+                    </div>
+                    <input type="radio" name="frequency" className="hidden" />
+                    <span className="text-[15px] sm:text-[17px] text-foreground">Recurring</span>
+                  </label>
+                </div>
+              </div>
+
+              <div className="mb-8">
+                <label className="block text-[15px] sm:text-[17px] text-foreground mb-3">Quantity<span className="text-red-500 ml-0.5">*</span></label>
+                <div className="flex border border-[#cbd5e1] rounded-xl overflow-hidden h-[60px] bg-white">
+                  <div className="w-[40%] sm:w-[45%] flex flex-col justify-center px-2 sm:px-4 border-r border-[#cbd5e1]">
+                    <span className="text-[12px] sm:text-[13px] text-[#64748b] font-medium leading-none mb-1.5">Quantity</span>
+                    <input type="text" defaultValue="50" className="w-full outline-none text-[15px] sm:text-[17px] text-foreground bg-transparent leading-none" />
+                  </div>
+                  <div className="w-[60%] sm:w-[55%] flex items-center relative">
+                    <select className="w-full h-full pl-2 sm:pl-4 pr-8 sm:pr-10 outline-none text-[14px] sm:text-[17px] text-foreground bg-transparent cursor-pointer appearance-none">
+                      <option>Piece/Pieces</option>
+                      <option>Kilogram</option>
+                      <option>Box</option>
+                    </select>
+                    <div className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#2563eb]">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="sm:w-5 sm:h-5"><path d="m6 9 6 6 6-6"/></svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <Button className="w-full rounded-lg bg-[#336b92] hover:bg-[#275a89] text-white h-12 font-medium text-[16px] shadow-sm">
+                Continue
+              </Button>
             </CardContent>
           </Card>
         </div>
