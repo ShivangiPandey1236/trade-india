@@ -33,6 +33,54 @@ const ProductDetails = () => {
     { id: 'rp-10', name: 'JCB Backhoe Loader Bucket Bush - Polished Mild Steel,...', price: '80', currency: 'INR', minPackSize: '350', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=210', seller: { companyName: 'R N Industries', location: 'Faridabad, Haryana' } }
   ];
 
+  const exploreCategories = [
+    { name: 'Tractor Loader Backhoe', image: 'https://picsum.photos/100/100?random=301' },
+    { name: 'Backhoe Excavator', image: 'https://picsum.photos/100/100?random=302' },
+    { name: 'Truck Loader', image: 'https://picsum.photos/100/100?random=303' },
+    { name: 'Backhoe Attachments', image: 'https://picsum.photos/100/100?random=304' },
+    { name: 'Shovel Loader', image: 'https://picsum.photos/100/100?random=305' },
+    { name: 'Skip Loader', image: 'https://picsum.photos/100/100?random=306' },
+    { name: 'Backhoe Bucket', image: 'https://picsum.photos/100/100?random=307' },
+    { name: 'Mine Loader', image: 'https://picsum.photos/100/100?random=308' },
+    { name: 'Mini Loader', image: 'https://picsum.photos/100/100?random=309' },
+    { name: 'Wheel Loaders', image: 'https://picsum.photos/100/100?random=310' },
+    { name: 'Mini Front End Loader', image: 'https://picsum.photos/100/100?random=311' },
+    { name: 'Front End Loader', image: 'https://picsum.photos/100/100?random=312' }
+  ];
+
+  const moreProductsFromSeller = [
+    { id: 'mps-1', name: 'Concrete Placing Boom...', image: 'https://picsum.photos/400/300?random=401' },
+    { id: 'mps-2', name: 'Tm 300 Truck Mounted Cran...', image: 'https://picsum.photos/400/300?random=402' },
+    { id: 'mps-3', name: 'Af40D-50D Forklifts - Col...', image: 'https://picsum.photos/400/300?random=403' },
+    { id: 'mps-4', name: 'Af 40D Forklift - Color: Yellow...', image: 'https://picsum.photos/400/300?random=404' },
+    { id: 'mps-5', name: 'Add 95 Vibratory Roll...', image: 'https://picsum.photos/400/300?random=405' },
+    { id: 'mps-6', name: 'Tm 250 C Truck Mounted Cran...', image: 'https://picsum.photos/400/300?random=406' },
+    { id: 'mps-7', name: 'ACX 750 Crawler Cran...', image: 'https://picsum.photos/400/300?random=407' },
+    { id: 'mps-8', name: 'Add 34 Vibratory Roll...', image: 'https://picsum.photos/400/300?random=408' },
+    { id: 'mps-9', name: 'Sb 123 Lorry Loader Crane...', image: 'https://picsum.photos/400/300?random=409' },
+    { id: 'mps-10', name: 'Ab 813 Lorry Loader Crane...', image: 'https://picsum.photos/400/300?random=410' }
+  ];
+
+  const recommendedProducts = [
+    { id: 'rec-1', name: 'Backhoe Loader - 0.7 cu.m Bucket Capacit...', image: 'https://picsum.photos/400/300?random=501', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-2', name: 'Backhoe Loader - 1.0 Cu.m. Loader...', image: 'https://picsum.photos/400/300?random=502', company: 'Action Construction...' },
+    { id: 'rec-3', name: 'Low Fuel Consumption And...', image: 'https://picsum.photos/400/300?random=503', company: 'Jcb India Limited' },
+    { id: 'rec-4', name: '4dx Backhoe Loader', image: 'https://picsum.photos/400/300?random=504', company: 'Jcb India Limited' },
+    { id: 'rec-5', name: 'Backhoe Loaders - Compact Frame...', image: 'https://picsum.photos/400/300?random=505', company: 'Gmmco Ltd.' },
+    { id: 'rec-6', name: 'Backhoe Loader - Premium Quality...', image: 'https://picsum.photos/400/300?random=506', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-7', name: 'Backhoe Loaders - 80 LPM Pump, Max...', image: 'https://picsum.photos/400/300?random=507', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-8', name: 'Ax 124 - 4 Wd Backhoe Loader -...', image: 'https://picsum.photos/400/300?random=508', company: 'Action Construction...' }
+  ];
+
+  const popularCategories = [
+    "Human Hair", "Forklift Trucks", "Servo Voltage Stabilizer", "Basmati Rice", "Backhoe Loader", "Carry Bag Making Machine", "Drum Lifter", "Electric Stacker", "Scissor Lifts",
+    "Industrial Vibrating Screen", "Rotameter", "Flowmeter", "Rotary Air Compressor", "Industrial Eto Sterilizer", "Rice Packaging Machines", "Shredding Machine", "Hammer Mill",
+    "Automatic Labelling Machine", "Diesel Forklift", "Aerial Work Platform", "Storage Rack System", "Epoxy Resin", "Mild Steel Bar", "Stainless Steel Sheets", "Stainless Steel Strips",
+    "Bag Filling Machines", "Asphalt Plants", "Slat Conveyor", "Ointment Plant", "Planetary Mixers", "Ladies Kurtis", "Led Lights", "Cctv Camera", "Ball Valve",
+    "Anti Cancer Medicine", "Air Compressor", "Incense Sticks", "Solar Lights", "Goods Lifts", "Vitrified Tiles", "Stainless Steel Coils", "Pvc Pipes", "Pvc Pipe Fittings", "Upvc Pipes",
+    "Upvc Ball Valve", "Pipe Elbows"
+  ];
+
   return (
     <div className="flex-1 p-4 md:p-8 w-full max-w-[1400px] mx-auto animate-fade-in-up">
       {/* Breadcrumbs */}
@@ -212,6 +260,45 @@ const ProductDetails = () => {
               ))}
             </div>
           </div>
+
+          {/* Explore Related Categories Section */}
+          <div className="mb-4 mt-4">
+            <h2 className="text-[22px] font-bold text-primary mb-6">Explore Related Categories</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {exploreCategories.map((cat, index) => (
+                <div key={index} className="flex items-center gap-4 p-3 border border-[#cbd5e1] rounded-xl bg-white hover:shadow-md transition-shadow cursor-pointer">
+                  <div className="w-[60px] h-[60px] flex-shrink-0 rounded-lg flex items-center justify-center p-1 border border-[#e2e8f0]">
+                    <img src={cat.image} alt={cat.name} className="max-w-full max-h-full object-contain rounded-md" />
+                  </div>
+                  <span className="text-[15px] font-medium text-[#334155] leading-tight">{cat.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* More Products From This Seller Section */}
+          <div className="mb-8 mt-8">
+            <h2 className="text-[22px] font-bold text-primary mb-6">More Products From This Seller</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4">
+              {moreProductsFromSeller.map((product) => (
+                <Card key={product.id} className="border border-[#cbd5e1] rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white overflow-hidden flex flex-col h-full">
+                  <CardContent className="p-3 flex flex-col h-full">
+                    <div className="border border-[#e2e8f0] rounded mb-3 flex items-center justify-center p-2 h-[120px]">
+                      <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain" />
+                    </div>
+                    <h3 className="text-[#3b3db9] text-[14px] font-medium leading-[1.3] line-clamp-2 min-h-[36px] mb-3">
+                      {product.name}
+                    </h3>
+                    <div className="mt-auto">
+                      <Button className="w-full rounded-lg bg-[#336b92] hover:bg-[#275a89] text-white h-9 text-[13px] font-medium shadow-sm">
+                        Send Inquiry
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
           
         </div>
 
@@ -349,6 +436,50 @@ const ProductDetails = () => {
         </div>
 
       </div>
+
+      {/* Recommended Products Section */}
+      <div className="mt-12 mb-8">
+        <h2 className="text-[24px] font-bold text-[#1e293b] mb-6">Recommended Products</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5">
+          {recommendedProducts.map((product) => (
+            <Card key={product.id} className="border border-[#cbd5e1] rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white overflow-hidden flex flex-col h-full">
+              <CardContent className="p-3 flex flex-col h-full">
+                <div className="bg-[#f1f5f9] rounded mb-3 flex items-center justify-center h-[140px] p-2">
+                  <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
+                </div>
+                <h3 className="text-[#3b3db9] text-[14.5px] font-medium leading-[1.3] line-clamp-2 min-h-[38px] mb-1.5">
+                  {product.name}
+                </h3>
+                <div className="text-[13px] text-[#64748b] mb-3 line-clamp-1">
+                  {product.company}
+                </div>
+                <div className="mt-auto">
+                  <Button className="w-full rounded-lg bg-[#336b92] hover:bg-[#275a89] text-white h-9 text-[13.5px] font-medium shadow-sm">
+                    Send Inquiry
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Popular Categories Section */}
+      <div className="bg-[#f4f6f8] rounded-2xl p-6 md:p-8 mt-12 mb-4">
+        <h2 className="text-[20px] font-bold text-[#1e293b] mb-6">Popular Categories</h2>
+        <div className="flex flex-wrap gap-2.5">
+          {popularCategories.map((cat, idx) => (
+            <Link 
+              key={idx} 
+              to="#" 
+              className="bg-white px-4 py-2 rounded-lg text-[13.5px] text-[#475569] shadow-sm hover:shadow-md hover:text-primary transition-all whitespace-nowrap"
+            >
+              {cat}
+            </Link>
+          ))}
+        </div>
+      </div>
+      
     </div>
   );
 };
