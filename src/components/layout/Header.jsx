@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -65,9 +66,9 @@ export default function Header() {
           {/* Logo & Mobile Action Wrapper */}
           <div className="flex items-center justify-between w-full lg:w-auto">
             {/* Logo */}
-            <div className="flex items-center flex-shrink-0 select-none">
+            <Link to="/" className="flex items-center flex-shrink-0 select-none">
               <img src={logo} alt="Trade India Logo" className="h-10 sm:h-12 w-auto object-contain" />
-            </div>
+            </Link>
 
             {/* Mobile Post Buy CTA */}
             <div className="lg:hidden shrink-0">
