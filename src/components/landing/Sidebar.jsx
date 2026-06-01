@@ -4,10 +4,11 @@ import {
   Wrench, 
   ChevronRight
 } from "lucide-react"
+import CategoryHoverMenu from './CategoryHoverMenu';
 
 const categories = [
-  { name: "Machinery", icon: Cpu },
-  { name: "Industrial Supplies", icon: Wrench },
+  { id: "machinery", name: "Machinery", icon: Cpu },
+  { id: "industrial-supplies", name: "Industrial Supplies", icon: Wrench },
 ]
 
 export default function Sidebar() {
@@ -21,10 +22,10 @@ export default function Sidebar() {
           {categories.map((cat, idx) => {
             const Icon = cat.icon
             return (
-              <li key={idx}>
-                <a 
-                  href="#" 
-                  className="flex items-center justify-between px-3 py-3 rounded-lg text-sm text-gray-700 hover:text-primary transition-all group font-medium bg-gray-50 hover:bg-primary/5 border border-gray-100 hover:border-primary/20"
+              <li key={idx} className="relative group">
+                <Link 
+                  to={`/products/${cat.id}`}
+                  className="flex items-center justify-between px-3 py-3 rounded-lg text-sm text-gray-700 hover:text-primary transition-all font-medium bg-gray-50 hover:bg-primary/5 border border-gray-100 hover:border-primary/20"
                 >
                   <div className="flex items-center space-x-3 truncate">
                     <div className="p-2 bg-white rounded-md shadow-sm border border-gray-100 group-hover:border-primary/20 transition-colors">
@@ -33,7 +34,8 @@ export default function Sidebar() {
                     <span className="truncate font-semibold">{cat.name}</span>
                   </div>
                   <ChevronRight className="w-4 h-4 text-gray-300 opacity-0 group-hover:opacity-100 group-hover:text-primary transition-all flex-shrink-0" />
-                </a>
+                </Link>
+                <CategoryHoverMenu categoryName={cat.name} />
               </li>
             )
           })}

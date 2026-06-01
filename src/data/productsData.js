@@ -134,5 +134,96 @@ export const categories = [
         }
       }
     ]
+  },
+  {
+    id: 'machinery',
+    name: 'Machinery',
+    image: 'https://picsum.photos/400/300?random=4',
+    description: 'High performance industrial machinery for various applications. From manufacturing units to textile companies and even energy-generating facilities.',
+    priceRange: '$1000 - $50000',
+    products: [
+      {
+        id: 'automatic-packaging-machine',
+        name: 'Automatic Industrial Packaging Machine',
+        price: '45000.00',
+        currency: 'USD',
+        unit: 'Set',
+        gst: '18%',
+        minPackSize: 1,
+        inStock: true,
+        image: 'https://picsum.photos/600/600?random=401',
+        thumbnails: [
+          'https://picsum.photos/100/100?random=401',
+          'https://picsum.photos/100/100?random=402',
+          'https://picsum.photos/100/100?random=403'
+        ],
+        description: 'Fully automatic packaging machine designed for high speed and precision in industrial applications.',
+        specifications: {
+          'Capacity': '500 units/min',
+          'Power': '380V/50Hz',
+          'Material': 'Stainless Steel 304',
+          'Automation Grade': 'Fully Automatic'
+        },
+        features: [
+          'High speed operations',
+          'PLC control system',
+          'Low maintenance',
+          'Energy efficient'
+        ],
+        seller: {
+          companyName: 'MechTech Industries',
+          gstNumber: '11AAABC1234D1Z5',
+          rating: '4.7',
+          location: 'Pune, Maharashtra',
+          managingDirector: 'Arun Singh',
+          address: 'Plot 45, MIDC, Pune, 411026, India'
+        }
+      }
+    ]
+  },
+  {
+    id: 'industrial-supplies',
+    name: 'Industrial Supplies',
+    image: 'https://picsum.photos/400/300?random=5',
+    description: 'Essential industrial supplies, tools, and equipment for manufacturing and construction.',
+    priceRange: '$10 - $500',
+    products: [
+      {
+        id: 'heavy-duty-grinding-wheel',
+        name: 'Heavy Duty Abrasive Grinding Wheel 14 Inch',
+        price: '25.00',
+        currency: 'USD',
+        unit: 'Piece',
+        gst: '18%',
+        minPackSize: 10,
+        inStock: true,
+        image: 'https://picsum.photos/600/600?random=501',
+        thumbnails: [
+          'https://picsum.photos/100/100?random=501',
+          'https://picsum.photos/100/100?random=502'
+        ],
+        description: 'Premium quality grinding wheel for heavy-duty industrial applications, suitable for steel and iron.',
+        specifications: {
+          'Size': '14 Inch',
+          'Thickness': '3mm',
+          'Max Speed': '4400 RPM',
+          'Material': 'Aluminum Oxide'
+        },
+        features: [
+          'Long lasting durability',
+          'Fast cutting speed',
+          'Reinforced fiberglass net',
+          'High safety standards'
+        ],
+        seller: {
+          companyName: 'Prime Tools & Hardware',
+          gstNumber: '27AABCT9988D1Z2',
+          rating: '4.6',
+          location: 'Mumbai, Maharashtra',
+          managingDirector: 'Ramesh Mehta',
+          address: 'Shop 12, Hardware Market, Andheri East, Mumbai, 400069, India'
+        }
+      }
+    ]
   }
 ];

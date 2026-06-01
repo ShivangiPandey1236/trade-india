@@ -187,8 +187,10 @@ const CategoryProducts = () => {
                   {cat.title}
                 </h3>
                 <div className="flex flex-col gap-4">
-                  {cat.items.map((item, itemIdx) => (
-                    <div key={itemIdx} className="flex items-center gap-3 group cursor-pointer">
+                  {cat.items.map((item, itemIdx) => {
+                    const itemSlug = item.name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                    return (
+                    <Link to={`/products/${category.id}/${itemSlug}`} key={itemIdx} className="flex items-center gap-3 group cursor-pointer">
                       <div className="w-[60px] h-[60px] border border-border rounded p-1 flex-shrink-0 bg-white group-hover:border-primary/50 transition-colors">
                         <img src={item.image} alt={item.name} className="w-full h-full object-contain mix-blend-multiply" />
                       </div>
@@ -197,7 +199,7 @@ const CategoryProducts = () => {
                           {item.name}
                         </h4>
                         {item.isLink ? (
-                          <span className="text-[12px] font-medium text-[#2563eb] hover:underline">
+                          <span className="text-[12px] font-medium text-[#2563eb] group-hover:underline">
                             {item.price}
                           </span>
                         ) : (
@@ -207,8 +209,9 @@ const CategoryProducts = () => {
                           </div>
                         )}
                       </div>
-                    </div>
-                  ))}
+                    </Link>
+                    );
+                  })}
                 </div>
               </div>
             ))}
