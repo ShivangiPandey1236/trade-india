@@ -39,9 +39,9 @@ const Home = () => {
             </div>
 
             {/* Bottom Row: Value Adds (Placed to the right of sidebar, directly below Hero + Promos) */}
-            <div className="w-full">
+            {/* <div className="w-full">
               <ValueAdds />
-            </div>
+            </div> */}
           </div>
         </div>
       </main>
