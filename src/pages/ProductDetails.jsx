@@ -257,7 +257,7 @@ const ProductDetails = () => {
                       <img src={relatedProduct.image} alt={relatedProduct.name} className="max-h-full max-w-full object-contain" />
                     </div>
 
-                    <h3 className="text-[#3b3db9] text-[15px] font-medium leading-[1.3] line-clamp-2 min-h-[39px]">
+                    <h3 className="text-primary text-[15px] font-medium leading-[1.3] line-clamp-2 min-h-[39px]">
                       {relatedProduct.name}
                     </h3>
 
@@ -323,7 +323,7 @@ const ProductDetails = () => {
                     <div className="border border-[#e2e8f0] rounded mb-3 flex items-center justify-center p-2 h-[120px]">
                       <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain" />
                     </div>
-                    <h3 className="text-[#3b3db9] text-[14px] font-medium leading-[1.3] line-clamp-2 min-h-[36px] mb-3">
+                    <h3 className="text-primary text-[14px] font-medium leading-[1.3] line-clamp-2 min-h-[36px] mb-3">
                       {product.name}
                     </h3>
                     <div className="mt-auto">
@@ -476,7 +476,7 @@ const ProductDetails = () => {
 
       {/* Recommended Products Section */}
       <div className="mt-12 mb-8">
-        <h2 className="text-[24px] font-bold text-[#1e293b] mb-6">Recommended Products</h2>
+        <h2 className="text-[24px] font-bold text-primary mb-6">Recommended Products</h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5">
           {recommendedProducts.map((product) => (
             <Card key={product.id} className="border border-[#cbd5e1] rounded-xl shadow-sm hover:shadow-md transition-shadow bg-white overflow-hidden flex flex-col h-full">
@@ -484,7 +484,7 @@ const ProductDetails = () => {
                 <div className="bg-[#f1f5f9] rounded mb-3 flex items-center justify-center h-[140px] p-2">
                   <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                 </div>
-                <h3 className="text-[#3b3db9] text-[14.5px] font-medium leading-[1.3] line-clamp-2 min-h-[38px] mb-1.5">
+                <h3 className="text-primary text-[14.5px] font-medium leading-[1.3] line-clamp-2 min-h-[38px] mb-1.5">
                   {product.name}
                 </h3>
                 <div className="text-[13px] text-[#64748b] mb-3 line-clamp-1">
@@ -503,7 +503,7 @@ const ProductDetails = () => {
 
       {/* Popular Categories Section */}
       <div className="bg-[#f4f6f8] rounded-2xl p-6 md:p-8 mt-12 mb-4">
-        <h2 className="text-[20px] font-bold text-[#1e293b] mb-6">Popular Categories</h2>
+        <h2 className="text-[20px] font-bold text-primary mb-6">Popular Categories</h2>
         <div className="flex flex-wrap gap-2.5">
           {popularCategories.map((cat, idx) => (
             <Link
