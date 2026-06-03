@@ -55,7 +55,7 @@ const SubcategoriesSection = ({
       <div className="flex flex-col xl:flex-row gap-6 md:gap-8">
         {/* Left section: Title & Main Image */}
         <div className="w-full xl:w-[220px] flex-shrink-0 flex flex-col items-center xl:items-start">
-          <h2 className="text-[18px] md:text-[20px] font-bold text-foreground mb-4 w-full text-left">{sectionTitle}</h2>
+          <h2 className="text-[18px] md:text-[20px] font-bold text-primary mb-4 w-full text-left">{sectionTitle}</h2>
           <div className="flex-1 flex items-center justify-center w-full max-w-[200px] xl:max-w-none">
             <img 
               src={mainImage} 
