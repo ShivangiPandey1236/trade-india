@@ -371,7 +371,7 @@ export default function SubcategoryProducts() {
                   <Link 
                     key={idx} 
                     to="#" 
-                    className="bg-white rounded-full px-4 py-3 text-center text-[13px] font-medium text-[#2d5c7a] shadow-sm border border-gray-100 hover:border-primary hover:text-primary transition-colors flex items-center justify-center break-words leading-tight"
+                    className="bg-white rounded-full px-4 py-3 text-center text-[13px] font-medium text-[#2d5c7a] shadow-sm border border-[#1d4ed8] hover:bg-blue-50 hover:text-primary transition-colors flex items-center justify-center break-words leading-tight"
                   >
                     {cat}
                   </Link>
