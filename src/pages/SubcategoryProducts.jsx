@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -8,7 +8,8 @@ import {
   MapPin, 
   ShieldCheck, 
   Award,
-  Phone
+  Phone,
+  ChevronRight
 } from 'lucide-react';
 
 export default function SubcategoryProducts() {
@@ -46,7 +47,51 @@ export default function SubcategoryProducts() {
     }
   ];
 
+  const moreCategories = [
+    "Machine Weft Hair", "Micro Ring", "Hair Bands", "Body Wave Human Hair",
+    "Virgin Remy Hair", "Hair Colour Ring", "Ladies Hair Band", "Combo Hair Ball",
+    "Stone Hair Clip", "Headbands", "Weft Human Hair", "Human Hair",
+    "Remy Weft Hair", "Bleached Hair", "Bobby Pins", "Fancy Hair Pin",
+    "Fashion Hair Clips", "Hair Accessories", "Hair Belt", "Hair Bow",
+    "Hair Ornament", "Hair Sticks", "Metal Hair Clip", "Pressing Comb"
+  ];
+
+  const latestProducts = [
+    {
+      title: "100% Indian Human Hair Accessories...",
+      seller: "Hair King",
+      image: "https://picsum.photos/200/150?random=401"
+    },
+    {
+      title: "Black Dubul Drwan Hair",
+      seller: "S P Hair Enterprise",
+      image: "https://picsum.photos/200/150?random=402"
+    },
+    {
+      title: "Hair Accessories",
+      seller: "Cherubs Parlour",
+      image: "https://picsum.photos/200/150?random=403"
+    },
+    {
+      title: "Human Hair Extensions",
+      seller: "Universal King",
+      image: "https://picsum.photos/200/150?random=404"
+    },
+    {
+      title: "Natural Wavy Hair",
+      seller: "Premium Exporters",
+      image: "https://picsum.photos/200/150?random=405"
+    }
+  ];
+
   const [visibleCount, setVisibleCount] = useState(5);
+  const carouselRef = useRef(null);
+
+  const scrollCarousel = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 206, behavior: 'smooth' });
+    }
+  };
 
   const mainProducts = Array(10).fill(null).map((_, i) => ({
     id: i,
@@ -290,6 +335,56 @@ export default function SubcategoryProducts() {
                 </Button>
               </div>
             )}
+
+            {/* Explore More Categories */}
+            <div className="mt-8 mb-4">
+              <h3 className="text-lg font-bold text-gray-900 mb-6">Explore More Categories</h3>
+              <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-4">
+                {moreCategories.map((cat, idx) => (
+                  <Link 
+                    key={idx} 
+                    to="#" 
+                    className="bg-white rounded-full px-4 py-3 text-center text-[13px] font-medium text-[#2d5c7a] shadow-sm border border-gray-100 hover:border-primary hover:text-primary transition-colors flex items-center justify-center break-words leading-tight"
+                  >
+                    {cat}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {/* Latest Products Carousel */}
+            <div className="mt-8 mb-4 relative group">
+              <h3 className="text-[17px] font-bold text-gray-900 mb-5">Latest From Human Hair & Accessories</h3>
+              
+              <div ref={carouselRef} className="flex gap-4 overflow-x-auto no-scrollbar pb-4 snap-x scroll-smooth">
+                {latestProducts.map((product, idx) => (
+                  <div key={idx} className="w-[190px] shrink-0 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col overflow-hidden hover:shadow-md transition-shadow snap-start">
+                    <div className="h-[140px] w-full p-3 flex items-center justify-center border-b border-gray-100 bg-gray-50/50">
+                      <img src={product.image} alt={product.title} className="max-w-full max-h-full object-contain rounded-md" />
+                    </div>
+                    <div className="p-4 flex flex-col flex-1">
+                      <h4 className="text-[13px] font-medium text-[#1d4ed8] line-clamp-2 leading-snug mb-1 hover:underline cursor-pointer">
+                        {product.title}
+                      </h4>
+                      <p className="text-[12px] text-gray-500 mb-4 mt-auto">
+                        By: {product.seller}
+                      </p>
+                      <Button className="w-full bg-[#366c8a] hover:bg-[#2b566e] text-white text-[13px] font-medium rounded-md h-[36px]">
+                        Get Best Price
+                      </Button>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Scroll Arrow (Aesthetic) */}
+              <button 
+                onClick={scrollCarousel}
+                className="absolute right-0 top-[60%] -translate-y-1/2 translate-x-3 w-10 h-10 bg-white border border-gray-200 rounded-full shadow-md flex items-center justify-center text-gray-600 hover:text-primary z-10 hidden lg:flex"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
 
           </div>
 
