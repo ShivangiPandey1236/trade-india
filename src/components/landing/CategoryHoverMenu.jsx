@@ -33,9 +33,9 @@ export default function CategoryHoverMenu({ categoryName }) {
             <div className="grid grid-cols-2 gap-x-8 gap-y-8">
               {data.map((section, idx) => (
                 <div key={idx} className="space-y-3">
-                  <h4 className="font-semibold text-slate-800 text-sm border-b border-border/40 pb-1.5 flex items-center">
+                  <Link to={`/subcategory/${section.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} className="font-semibold text-slate-800 text-sm border-b border-border/40 pb-1.5 flex items-center hover:text-primary transition-colors w-full">
                     {section.title}
-                  </h4>
+                  </Link>
                   <ul className="space-y-2.5">
                     {section.items.map((item, itemIdx) => (
                       <li key={itemIdx}>

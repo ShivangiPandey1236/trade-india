@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Products from './pages/Products'
 import CategoryProducts from './pages/CategoryProducts'
 import ProductDetails from './pages/ProductDetails'
+import SubcategoryProducts from './pages/SubcategoryProducts'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:categoryId" element={<CategoryProducts />} />
+            <Route path="/subcategory/:subcategoryName" element={<SubcategoryProducts />} />
             <Route path="/products/:categoryId/:productId" element={<ProductDetails />} />
           </Routes>
         </div>
