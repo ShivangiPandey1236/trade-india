@@ -84,6 +84,33 @@ export default function SubcategoryProducts() {
     }
   ];
 
+  const manufacturers = [
+    { name: "Lucky Hair Traders", location: "Chennai, India", memberSince: "22 Years" },
+    { name: "Sree Balaji Exports", location: "Chennai, India", memberSince: "19 Years" },
+    { name: "Bhawani Enterprises", location: "Chennai, India", memberSince: "19 Years" },
+    { name: "Nandalala Enterprises", location: "Chennai, India", memberSince: "18 Years" },
+    { name: "Siddhi Creation", location: "Mumbai, India", memberSince: "17 Years" },
+    { name: "Salonlabs Exports India Pvt. Ltd.", location: "Bengaluru, India", memberSince: "16 Years" },
+    { name: "Allure Hair Products Pvt. Ltd", location: "Chennai, India", memberSince: "16 Years" },
+    { name: "Famous Exports", location: "Howrah, India", memberSince: "16 Years" },
+    { name: "Best Hair Enterprises", location: "Chennai, India", memberSince: "16 Years" },
+  ];
+
+  const popularProductTags = [
+    "Human Hair", "Forklift Trucks", "Servo Voltage Stabilizer", "Basmati Rice", 
+    "Backhoe Loader", "Carry Bag Making Machine", "Drum Lifter", "Electric Stacker", 
+    "Scissor Lifts", "Industrial Vibrating Screen", "Rotameter", "Flowmeter", 
+    "Rotary Air Compressor", "Industrial Eto Sterilizer", "Rice Packaging Machines", 
+    "Shredding Machine", "Hammer Mill", "Automatic Labelling Machine", "Diesel Forklift", 
+    "Aerial Work Platform", "Storage Rack System", "Epoxy Resin", "Mild Steel Bar", 
+    "Stainless Steel Sheets", "Stainless Steel Strips", "Bag Filling Machines", 
+    "Asphalt Plants", "Slat Conveyor", "Ointment Plant", "Planetary Mixers", 
+    "Ladies Kurtis", "Led Lights", "Cctv Camera", "Ball Valve", "Anti Cancer Medicine", 
+    "Air Compressor", "Incense Sticks", "Solar Lights", "Goods Lifts", "Vitrified Tiles", 
+    "Stainless Steel Coils", "Pvc Pipes", "Pvc Pipe Fittings", "Upvc Pipes", 
+    "Upvc Ball Valve", "Pipe Elbows"
+  ];
+
   const [visibleCount, setVisibleCount] = useState(5);
   const carouselRef = useRef(null);
 
@@ -493,6 +520,50 @@ export default function SubcategoryProducts() {
           </div>
 
         </div>
+
+        {/* Manufacturers & Suppliers Table (Centered) */}
+        <div className="mt-8 mb-12 max-w-[1000px] mx-auto">
+          <h3 className="text-[17px] font-bold text-gray-900 mb-5">Manufacturers & Suppliers of Human Hair & Accessories</h3>
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
+            <div className="grid grid-cols-[1fr_150px] bg-black text-white text-[13px] font-medium">
+              <div className="px-5 py-3 border-r border-gray-800">Company Name</div>
+              <div className="px-5 py-3">Member Since</div>
+            </div>
+            <div className="flex flex-col">
+              {manufacturers.map((mfg, idx) => (
+                <div key={idx} className="grid grid-cols-[1fr_150px] text-[13px] border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors">
+                  <div className="px-5 py-3 flex flex-col gap-1 border-r border-gray-100">
+                    <Link to="#" className="text-[#1d4ed8] hover:underline font-medium">{mfg.name}</Link>
+                    <div className="flex items-center gap-1 text-gray-500 text-[12px] mt-0.5">
+                      <MapPin className="w-3.5 h-3.5" />
+                      <span>{mfg.location}</span>
+                    </div>
+                  </div>
+                  <div className="px-5 py-3 flex items-center text-gray-700 font-medium">
+                    {mfg.memberSince}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Popular Products Tags */}
+        <div className="mb-12 w-full">
+          <h3 className="text-[17px] font-bold text-gray-900 mb-5">Popular Products</h3>
+          <div className="flex flex-wrap gap-2.5">
+            {popularProductTags.map((tag, idx) => (
+              <Link 
+                key={idx} 
+                to="#" 
+                className="bg-white rounded-md px-4 py-2 text-[13px] font-medium text-gray-600 shadow-sm border border-[#1d4ed8] hover:bg-blue-50 hover:text-[#1d4ed8] transition-colors whitespace-nowrap"
+              >
+                {tag}
+              </Link>
+            ))}
+          </div>
+        </div>
+
       </div>
     </div>
   );
