@@ -141,87 +141,115 @@ export default function SubcategoryProducts() {
             </div>
 
             {/* Main Product Card */}
-            <div className="bg-white rounded-lg shadow-sm border border-gray-100 p-0 overflow-hidden flex flex-col md:flex-row relative hover:shadow-md transition-shadow">
+            <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-0 overflow-hidden flex flex-col lg:flex-row relative hover:shadow-md transition-shadow">
               
               {/* Product Image Section */}
-              <div className="w-full md:w-[320px] shrink-0 p-6 flex flex-col items-center justify-center relative border-b md:border-b-0 md:border-r border-gray-100">
-                {/* Industry Leader Badge */}
-                <div className="absolute top-4 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1.5 rounded-r-md shadow-sm z-10 flex items-center gap-1">
-                  <Award className="w-3.5 h-3.5" />
-                  Industry Leader
+              <div className="w-full lg:w-[220px] shrink-0 p-4 flex flex-col items-center justify-center relative border-b lg:border-b-0 lg:border-r border-gray-200">
+                {/* Super Bonanza Badge */}
+                <div className="absolute top-4 left-0 bg-[#8c8c8c] text-white text-[10px] font-bold pl-2 pr-3 py-1 rounded-r-full flex items-center gap-1.5 shadow-sm uppercase tracking-wide z-10">
+                  <svg className="w-4 h-4 text-[#a3cfff]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l8 8-8 12L4 10l8-8zm0 3.5L7.5 10h9L12 5.5z"/></svg>
+                  <div className="flex flex-col leading-tight -mt-0.5">
+                    <span className="text-[7px] leading-none opacity-90">SUPER</span>
+                    <span className="leading-none text-[11px]">BONANZA</span>
+                  </div>
                 </div>
                 {/* Flag Icon */}
-                <div className="absolute top-4 right-4">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India" className="w-6 h-4 object-cover border border-gray-200 rounded-sm" />
+                <div className="absolute top-4 right-4 z-10">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India" className="w-[18px] h-[18px] object-cover border border-gray-200 rounded-full shadow-sm" />
                 </div>
                 
                 <img 
-                  src="https://picsum.photos/400/300?random=300" 
-                  alt="Packing Machine" 
-                  className="w-full max-w-[250px] h-auto object-contain hover:scale-105 transition-transform duration-300"
+                  src="https://picsum.photos/400/300?random=301" 
+                  alt="Lace Front Wig" 
+                  className="w-full max-w-[180px] h-auto object-contain hover:scale-105 transition-transform duration-300 mt-6"
                 />
               </div>
 
               {/* Product Info Section */}
-              <div className="flex-1 p-6 flex flex-col">
-                <Link to="#" className="text-lg font-medium text-primary hover:underline leading-tight mb-4">
-                  Packing Machine - Metal, 750-1000 Packs/Min, Silver | Automatic Operation, PLC...
+              <div className="flex-1 p-4 lg:p-5 min-w-0 flex flex-col">
+                <Link to="#" className="text-[18px] font-medium text-[#1d4ed8] hover:underline leading-snug mb-4">
+                  Lace Front Wig - Application: Profesional
                 </Link>
                 
-                <div className="flex items-center justify-between mb-6">
-                  <div>
-                    <span className="text-xl font-bold text-gray-900">500000 INR/</span>
-                    <span className="text-lg font-bold text-gray-900">Unit</span>
+                <div className="flex flex-wrap items-center justify-between gap-3 mb-5">
+                  <div className="flex flex-col">
+                    <span className="text-[14px] font-bold text-gray-900 leading-tight">Price:</span>
+                    <span className="text-[18px] font-extrabold text-gray-900 leading-tight">15000.00</span>
+                    <span className="text-[14px] font-bold text-gray-900 leading-tight">INR/Piece</span>
                   </div>
-                  <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 rounded-full px-6 font-semibold h-9">
+                  <Button variant="outline" className="border-[#1d4ed8] text-[#1d4ed8] hover:bg-blue-50 rounded-full px-4 py-1.5 font-semibold text-[13px] h-auto shrink-0">
                     Get Best Quote
                   </Button>
                 </div>
 
                 {/* Specs Table */}
-                <div className="grid grid-cols-[120px_1fr] gap-y-2.5 text-[13px]">
+                <div className="grid grid-cols-[100px_1fr] gap-y-2 text-[13px]">
                   <div className="text-gray-500">MOQ</div>
-                  <div className="text-gray-900 font-medium">1 Unit/Units</div>
+                  <div className="text-gray-900 break-words">1 Piece/Pieces</div>
                   
                   <div className="text-gray-500">Color</div>
-                  <div className="text-gray-900 font-medium">Silver</div>
+                  <div className="text-gray-900 break-words">Natural Color</div>
                   
-                  <div className="text-gray-500">Usage</div>
-                  <div className="text-gray-900 font-medium">Industrial</div>
+                  <div className="text-gray-500">Product Type</div>
+                  <div className="text-gray-900 break-words">Human Hair</div>
                   
-                  <div className="text-gray-500">Type</div>
-                  <div className="text-gray-900 font-medium">Packaging Line</div>
+                  <div className="text-gray-500">Used By</div>
+                  <div className="text-gray-900 break-words">Women, Girls</div>
                   
-                  <div className="text-gray-500">Material</div>
-                  <div className="text-gray-900 font-medium">Metal</div>
+                  <div className="text-gray-500">Hair Grade</div>
+                  <div className="text-gray-900 break-words">Remy Hair</div>
                   
-                  <div className="text-gray-500">Feature</div>
-                  <div className="text-gray-900 font-medium">Highly Efficient</div>
+                  <div className="text-gray-500">Human Hair Type</div>
+                  <div className="text-gray-900 break-words">Indian</div>
+
+                  <div className="text-gray-500">Length</div>
+                  <div className="text-gray-900 break-words">10-30 Inch (in)</div>
                 </div>
+
+                <Link to="#" className="text-[#1d4ed8] text-[13px] hover:underline mt-4 inline-block">
+                  More details...
+                </Link>
               </div>
 
               {/* Seller Info Section */}
-              <div className="w-full md:w-[260px] shrink-0 bg-orange-50/30 p-6 flex flex-col border-t md:border-t-0 md:border-l border-gray-100">
-                <Link to="#" className="text-[15px] font-semibold text-gray-900 hover:text-primary mb-1">
-                  3teck Engineering
+              <div className="w-full lg:w-[240px] shrink-0 p-4 lg:p-5 flex flex-col border-t lg:border-t-0 lg:border-l border-gray-200 bg-[#fcfaf5]">
+                <Link to="#" className="text-[17px] font-medium text-gray-900 hover:text-[#1d4ed8] mb-1 line-clamp-1">
+                  Vhs Luxury Ventures
                 </Link>
-                <div className="text-[13px] text-gray-500 mb-4">Thane</div>
+                <div className="text-[13px] text-gray-500 mb-0.5">Kanpur</div>
+                <div className="text-[12px] text-gray-500 mb-0.5 leading-snug break-words">Business Type: Manufacturer | Distributor</div>
+                <div className="text-[12px] text-gray-500 mb-4">Established In: 1975</div>
                 
-                <div className="space-y-2 mb-auto">
-                  <div className="flex items-center gap-2 text-[13px] text-gray-700">
-                    <ShieldCheck className="w-4 h-4 text-green-600" />
-                    Trusted Seller
+                <div className="flex items-start justify-between w-full mb-auto gap-2">
+                  <div className="flex flex-col gap-2">
+                    <div className="flex items-center gap-1.5 text-[13px] text-gray-600">
+                      <svg className="w-4 h-4 shrink-0 text-[#1d4ed8] drop-shadow-sm" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l8 8-8 12L4 10l8-8zm0 3.5L7.5 10h9L12 5.5z"/></svg>
+                      <span className="truncate">Super Bonanza</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 text-[13px] text-gray-600">
+                      <ShieldCheck className="w-4 h-4 shrink-0 text-green-600 drop-shadow-sm" />
+                      <span className="truncate">Trusted Seller</span>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-2 text-[13px] text-gray-700">
-                    <Award className="w-4 h-4 text-blue-500" />
-                    Super Seller
+                  <div className="bg-gray-200/80 text-gray-700 text-[11px] font-medium px-2 py-1 rounded shrink-0">
+                    7 Years
                   </div>
                 </div>
 
-                <Button variant="outline" className="w-full mt-6 border-primary text-primary hover:bg-primary/5 rounded-md flex items-center justify-center gap-2 h-10 font-semibold bg-white">
-                  <Phone className="w-4 h-4" />
-                  View Mobile Number
-                </Button>
+                <div className="flex flex-col gap-2.5 mt-6">
+                  <Button variant="outline" className="w-full border-[#1d4ed8] text-[#1d4ed8] hover:bg-blue-50 rounded-lg flex items-center justify-center gap-2 h-[38px] font-semibold bg-white shadow-sm px-2">
+                    <Phone className="w-[14px] h-[14px] shrink-0" />
+                    <span className="text-[13px] truncate">View Mobile Number</span>
+                  </Button>
+                  
+                  <Button className="w-full bg-[#2d5c7a] hover:bg-[#234962] text-white rounded-lg flex items-center justify-between px-3 h-[44px] shadow-sm">
+                    <div className="flex flex-col items-start leading-tight min-w-0">
+                      <span className="font-semibold text-[13px] truncate w-full text-left">Contact Supplier</span>
+                      <span className="text-[10px] font-normal text-white/90 truncate w-full text-left">Ask for a Quote</span>
+                    </div>
+                    <svg className="w-4 h-4 shrink-0 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </Button>
+                </div>
               </div>
 
             </div>
