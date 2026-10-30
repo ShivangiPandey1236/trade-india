@@ -30,8 +30,7 @@ export default function ExitFormModal({ isOpen, onClose }) {
         <div className="w-full md:w-7/12 flex flex-col p-6 sm:p-8 lg:p-10 relative bg-[#fcf9f5]">
           <div className="absolute top-0 right-10 hidden sm:flex flex-col items-end pt-8 pr-4">
             <div className="text-2xl font-black tracking-tighter flex items-center">
-              <span className="bg-gradient-to-r from-[#004de6] from-[40%] to-[#ff8000] to-[55%] text-transparent bg-clip-text">Utpaad</span>
-            </div>
+<span class="bg-[linear-gradient(263deg,#ff2d0d_2.73%,#ff5e1a_26.36%,#ff6400_50%,#ff7e0d_73.64%,#ffab1a_97.27%)] text-transparent bg-clip-text">Utpaad</span>            </div>
           </div>
 
           <h2 className="text-xl sm:text-2xl lg:text-3xl font-medium text-gray-900 mb-2 mt-4 sm:mt-0">
