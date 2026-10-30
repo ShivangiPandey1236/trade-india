@@ -80,8 +80,7 @@ export default function Header() {
 
           {/* Search Bar */}
           <div className="w-full lg:flex-1 lg:max-w-3xl flex px-0 lg:px-4">
-            <div className="flex w-full rounded-full border-2 border-primary overflow-hidden shadow-sm h-10 sm:h-11 items-stretch bg-white">
-              {/* Category selector - hidden on mobile, visible on sm and up */}
+<div className="flex w-full rounded-full border-2 border-transparent overflow-hidden shadow-sm h-10 sm:h-11 items-stretch bg-white hover:shadow-[0_8px_25px_rgba(255,94,26,0.22)] transition-all duration-300" style={{ backgroundImage: "linear-gradient(white, white), linear-gradient(263deg, #ff2d0d, #ff5e1a, #ff6400, #ff7e0d, #ffab1a)", backgroundOrigin: "border-box", backgroundClip: "padding-box, border-box" }}>              {/* Category selector - hidden on mobile, visible on sm and up */}
               <div className="hidden sm:flex w-40 h-full border-r border-gray-200 bg-gray-50/50 items-center shrink-0">
                 <Select defaultValue="Products / Services">
                   <SelectTrigger className="w-full border-0 focus:ring-0 focus:ring-offset-0 focus-visible:ring-0 shadow-none bg-transparent hover:bg-transparent text-gray-600 font-semibold px-4 h-full cursor-pointer focus:outline-none text-sm">
