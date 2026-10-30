@@ -37,13 +37,13 @@ export default function SubcategoryProducts() {
       title: "Litchi Juice Packing Machine",
       price: "60000 INR",
       seller: "Panda Machines Pvt Ltd",
-      image: "https://picsum.photos/100/100?random=101"
+      image: "https://loremflickr.com/100/100?random=101"
     },
     {
       title: "Pneumatic Blister Packaging Machine - Application: Scrubber Packing",
       price: "48500.0 INR",
       seller: "Purusharth Packaging",
-      image: "https://picsum.photos/100/100?random=102"
+      image: "https://loremflickr.com/100/100?random=102"
     }
   ];
 
@@ -60,27 +60,27 @@ export default function SubcategoryProducts() {
     {
       title: "100% Indian Human Hair Accessories...",
       seller: "Hair King",
-      image: "https://picsum.photos/200/150?random=401"
+      image: "https://loremflickr.com/200/150?random=401"
     },
     {
       title: "Black Dubul Drwan Hair",
       seller: "S P Hair Enterprise",
-      image: "https://picsum.photos/200/150?random=402"
+      image: "https://loremflickr.com/200/150?random=402"
     },
     {
       title: "Hair Accessories",
       seller: "Cherubs Parlour",
-      image: "https://picsum.photos/200/150?random=403"
+      image: "https://loremflickr.com/200/150?random=403"
     },
     {
       title: "Human Hair Extensions",
       seller: "Universal King",
-      image: "https://picsum.photos/200/150?random=404"
+      image: "https://loremflickr.com/200/150?random=404"
     },
     {
       title: "Natural Wavy Hair",
       seller: "Premium Exporters",
-      image: "https://picsum.photos/200/150?random=405"
+      image: "https://loremflickr.com/200/150?random=405"
     }
   ];
 
@@ -125,7 +125,7 @@ export default function SubcategoryProducts() {
     title: i % 2 === 0 ? "Lace Front Wig - Application: Profesional" : "Machine Weft Wavy Hair Application: Profesional",
     priceAmount: i % 2 === 0 ? "15000.00" : "300 USD ($)",
     priceUnit: i % 2 === 0 ? "INR/Piece" : "/Kilograms",
-    image: `https://picsum.photos/400/300?random=${301 + i}`,
+    image: `https://loremflickr.com/400/300?random=${301 + i}`,
     superBonanza: i % 2 === 0,
     hasFlag: i % 2 === 0,
     sellerName: i % 2 === 0 ? "Vhs Luxury Ventures" : "Nandalala Enterprises",
@@ -239,7 +239,7 @@ export default function SubcategoryProducts() {
           <div className="flex-1 w-full min-w-0 flex flex-col gap-4">
             {/* Small Top Card */}
             <div className="bg-white rounded-lg p-3 shadow-sm border border-gray-100 flex items-center gap-4 w-fit pr-12 cursor-pointer hover:shadow-md transition-shadow">
-              <img src="https://picsum.photos/60/60?random=200" alt="Viscous Filling Machine" className="w-[60px] h-[60px] object-cover rounded-md border border-gray-100" />
+              <img src="https://loremflickr.com/60/60?random=200" alt="Viscous Filling Machine" className="w-[60px] h-[60px] object-cover rounded-md border border-gray-100" />
               <span className="text-sm font-medium text-gray-800">Automatic Viscous Filling Machine</span>
             </div>
 

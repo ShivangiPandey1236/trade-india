@@ -19,8 +19,9 @@ export default function PostBuyRequirement() {
         {/* Logo Text - top right of form */}
         <div className="absolute top-0 right-0 hidden sm:flex flex-col items-end">
           <div className="text-2xl font-black tracking-tighter flex items-center">
-            <span className="bg-gradient-to-r from-[#004de6] from-[40%] to-[#ff8000] to-[55%] text-transparent bg-clip-text">Utpaad</span>
-          </div>
+<span className="bg-[linear-gradient(263deg,#ff2d0d_2.73%,#ff5e1a_26.36%,#ff6400_50%,#ff7e0d_73.64%,#ffab1a_97.27%)] text-transparent bg-clip-text">
+  Utpaad
+</span>          </div>
         </div>
 
         <h2 className="text-xl sm:text-2xl font-medium text-gray-900 mb-2">

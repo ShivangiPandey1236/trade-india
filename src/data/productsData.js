@@ -2,7 +2,7 @@ export const categories = [
   {
     id: 'electronics',
     name: 'Electronics',
-    image: 'https://picsum.photos/400/300?random=1',
+    image: 'https://loremflickr.com/400/300?random=1',
     description: 'Explore the latest in consumer electronics, smartphones, and accessories.',
     priceRange: '$10 - $2000',
     products: [
@@ -15,12 +15,12 @@ export const categories = [
         gst: '18%',
         minPackSize: 1,
         inStock: true,
-        image: 'https://picsum.photos/600/600?random=101',
+        image: 'https://loremflickr.com/600/600?random=101',
         thumbnails: [
-          'https://picsum.photos/100/100?random=101',
-          'https://picsum.photos/100/100?random=102',
-          'https://picsum.photos/100/100?random=103',
-          'https://picsum.photos/100/100?random=104'
+          'https://loremflickr.com/100/100?random=101',
+          'https://loremflickr.com/100/100?random=102',
+          'https://loremflickr.com/100/100?random=103',
+          'https://loremflickr.com/100/100?random=104'
         ],
         description: 'The latest flagship smartphone featuring a stunning OLED display, pro-grade camera system, and all-day battery life.',
         specifications: {
@@ -56,11 +56,11 @@ export const categories = [
         gst: '18%',
         minPackSize: 5,
         inStock: true,
-        image: 'https://picsum.photos/600/600?random=105',
+        image: 'https://loremflickr.com/600/600?random=105',
         thumbnails: [
-          'https://picsum.photos/100/100?random=105',
-          'https://picsum.photos/100/100?random=106',
-          'https://picsum.photos/100/100?random=107'
+          'https://loremflickr.com/100/100?random=105',
+          'https://loremflickr.com/100/100?random=106',
+          'https://loremflickr.com/100/100?random=107'
         ],
         description: 'Active noise cancelling wireless earbuds with high-fidelity sound and comfortable fit.',
         specifications: {
@@ -89,7 +89,7 @@ export const categories = [
   {
     id: 'fashion',
     name: 'Menswear',
-    image: 'https://picsum.photos/400/300?random=3',
+    image: 'https://loremflickr.com/400/300?random=3',
     description: 'Trendy and comfortable clothing for men, women, and kids.',
     priceRange: '$15 - $200',
     products: [
@@ -102,13 +102,13 @@ export const categories = [
         gst: '0%',
         minPackSize: 46,
         inStock: true,
-        image: 'https://picsum.photos/600/800?random=301',
+        image: 'https://loremflickr.com/600/800?random=301',
         thumbnails: [
-          'https://picsum.photos/100/150?random=301',
-          'https://picsum.photos/100/150?random=302',
-          'https://picsum.photos/100/150?random=303',
-          'https://picsum.photos/100/150?random=304',
-          'https://picsum.photos/100/150?random=305'
+          'https://loremflickr.com/100/150?random=301',
+          'https://loremflickr.com/100/150?random=302',
+          'https://loremflickr.com/100/150?random=303',
+          'https://loremflickr.com/100/150?random=304',
+          'https://loremflickr.com/100/150?random=305'
         ],
         description: 'A timeless festive wear kurta crafted from premium materials. Perfect for any traditional occasion.',
         specifications: {
@@ -138,7 +138,7 @@ export const categories = [
   {
     id: 'machinery',
     name: 'Machinery',
-    image: 'https://picsum.photos/400/300?random=4',
+    image: 'https://loremflickr.com/400/300?random=4',
     description: 'High performance industrial machinery for various applications. From manufacturing units to textile companies and even energy-generating facilities.',
     priceRange: '$1000 - $50000',
     products: [
@@ -151,11 +151,11 @@ export const categories = [
         gst: '18%',
         minPackSize: 1,
         inStock: true,
-        image: 'https://picsum.photos/600/600?random=401',
+        image: 'https://loremflickr.com/600/600?random=401',
         thumbnails: [
-          'https://picsum.photos/100/100?random=401',
-          'https://picsum.photos/100/100?random=402',
-          'https://picsum.photos/100/100?random=403'
+          'https://loremflickr.com/100/100?random=401',
+          'https://loremflickr.com/100/100?random=402',
+          'https://loremflickr.com/100/100?random=403'
         ],
         description: 'Fully automatic packaging machine designed for high speed and precision in industrial applications.',
         specifications: {
@@ -184,7 +184,7 @@ export const categories = [
   {
     id: 'industrial-supplies',
     name: 'Industrial Supplies',
-    image: 'https://picsum.photos/400/300?random=5',
+    image: 'https://loremflickr.com/400/300?random=5',
     description: 'Essential industrial supplies, tools, and equipment for manufacturing and construction.',
     priceRange: '$10 - $500',
     products: [
@@ -197,10 +197,10 @@ export const categories = [
         gst: '18%',
         minPackSize: 10,
         inStock: true,
-        image: 'https://picsum.photos/600/600?random=501',
+        image: 'https://loremflickr.com/600/600?random=501',
         thumbnails: [
-          'https://picsum.photos/100/100?random=501',
-          'https://picsum.photos/100/100?random=502'
+          'https://loremflickr.com/100/100?random=501',
+          'https://loremflickr.com/100/100?random=502'
         ],
         description: 'Premium quality grinding wheel for heavy-duty industrial applications, suitable for steel and iron.',
         specifications: {

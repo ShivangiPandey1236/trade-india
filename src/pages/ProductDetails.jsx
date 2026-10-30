@@ -21,10 +21,10 @@ const ProductDetails = () => {
       gst: '18%',
       minPackSize: 1,
       inStock: true,
-      image: `https://picsum.photos/600/600?random=${Math.floor(Math.random() * 1000)}`,
+      image: `https://loremflickr.com/600/600?random=${Math.floor(Math.random() * 1000)}`,
       thumbnails: [
-        `https://picsum.photos/100/100?random=${Math.floor(Math.random() * 1000)}`,
-        `https://picsum.photos/100/100?random=${Math.floor(Math.random() * 1000)}`
+        `https://loremflickr.com/100/100?random=${Math.floor(Math.random() * 1000)}`,
+        `https://loremflickr.com/100/100?random=${Math.floor(Math.random() * 1000)}`
       ],
       description: `High quality ${productId.replace(/-/g, ' ')} for industrial applications. Contact us for bulk orders and special requirements.`,
       specifications: {
@@ -58,55 +58,55 @@ const ProductDetails = () => {
   const [quantity, setQuantity] = useState(product.minPackSize || 1);
 
   const demoRelatedProducts = [
-    { id: 'rp-1', name: 'Ax 130 Backhoe Loaders - Color: Yellow', price: '2300000', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=201', seller: { companyName: 'Action Construction Equipment Ltd.', location: 'Faridabad, Haryana' } },
-    { id: 'rp-2', name: 'Backhoe Loader Bucket - Automatic Grade: Manual', price: '120000.0', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=202', seller: { companyName: 'W G Enterprises Private Limited', location: 'Faridabad, Haryana' } },
-    { id: 'rp-3', name: 'Excavator Backhoe Loader Bushs - Color: Silver', price: null, minPackSize: '100', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=203', seller: { companyName: 'Das Fabricators', location: 'Faridabad, Haryana' } },
-    { id: 'rp-4', name: 'Cat424B Backhoe Loaders Spare Parts - Black Finish,...', price: null, minPackSize: '10', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=204', seller: { companyName: 'Rk Trading', location: 'Faridabad, Haryana' } },
-    { id: 'rp-5', name: 'Mini Backhoe Loader - 1400 Kg Weight, Red & Yellow...', price: '550000', currency: 'INR', minPackSize: '5', unit: 'Unit/Units', image: 'https://picsum.photos/400/300?random=205', seller: { companyName: 'Sai Hydraulics And Earthmovers...', location: 'Faridabad, Haryana' } },
-    { id: 'rp-6', name: 'Jcb Seat Cover - Color: Black', price: '490.0', currency: 'INR', minPackSize: '25', unit: 'Set/Sets', image: 'https://picsum.photos/400/300?random=206', seller: { companyName: 'R. V. Enterprises', location: 'Faridabad, Haryana' } },
-    { id: 'rp-7', name: 'Engine Fuel Pipe Backhoe Loader 3CX/4CX/3DX...', price: '328.00', currency: 'INR', minPackSize: '50', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=207', seller: { companyName: 'Durga Engineers', location: 'Faridabad, Haryana' } },
-    { id: 'rp-8', name: 'High Dump Backhoe Loader Warranty: Standard', price: null, minPackSize: null, image: 'https://picsum.photos/400/300?random=208', seller: { companyName: 'Sec-rjmt Engineering Pvt. Ltd.', location: 'Faridabad, Haryana' } },
-    { id: 'rp-9', name: 'Heavy Duty Tractor Attachment Backhoe Loaders', price: null, minPackSize: null, image: 'https://picsum.photos/400/300?random=209', seller: { companyName: 'Ab Excavators & Earthmovers P...', location: 'Faridabad, Haryana' } },
-    { id: 'rp-10', name: 'JCB Backhoe Loader Bucket Bush - Polished Mild Steel,...', price: '80', currency: 'INR', minPackSize: '350', unit: 'Piece/Pieces', image: 'https://picsum.photos/400/300?random=210', seller: { companyName: 'R N Industries', location: 'Faridabad, Haryana' } }
+    { id: 'rp-1', name: 'Ax 130 Backhoe Loaders - Color: Yellow', price: '2300000', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://loremflickr.com/400/300?random=201', seller: { companyName: 'Action Construction Equipment Ltd.', location: 'Faridabad, Haryana' } },
+    { id: 'rp-2', name: 'Backhoe Loader Bucket - Automatic Grade: Manual', price: '120000.0', currency: 'INR', minPackSize: '1', unit: 'Unit/Units', image: 'https://loremflickr.com/400/300?random=202', seller: { companyName: 'W G Enterprises Private Limited', location: 'Faridabad, Haryana' } },
+    { id: 'rp-3', name: 'Excavator Backhoe Loader Bushs - Color: Silver', price: null, minPackSize: '100', unit: 'Piece/Pieces', image: 'https://loremflickr.com/400/300?random=203', seller: { companyName: 'Das Fabricators', location: 'Faridabad, Haryana' } },
+    { id: 'rp-4', name: 'Cat424B Backhoe Loaders Spare Parts - Black Finish,...', price: null, minPackSize: '10', unit: 'Unit/Units', image: 'https://loremflickr.com/400/300?random=204', seller: { companyName: 'Rk Trading', location: 'Faridabad, Haryana' } },
+    { id: 'rp-5', name: 'Mini Backhoe Loader - 1400 Kg Weight, Red & Yellow...', price: '550000', currency: 'INR', minPackSize: '5', unit: 'Unit/Units', image: 'https://loremflickr.com/400/300?random=205', seller: { companyName: 'Sai Hydraulics And Earthmovers...', location: 'Faridabad, Haryana' } },
+    { id: 'rp-6', name: 'Jcb Seat Cover - Color: Black', price: '490.0', currency: 'INR', minPackSize: '25', unit: 'Set/Sets', image: 'https://loremflickr.com/400/300?random=206', seller: { companyName: 'R. V. Enterprises', location: 'Faridabad, Haryana' } },
+    { id: 'rp-7', name: 'Engine Fuel Pipe Backhoe Loader 3CX/4CX/3DX...', price: '328.00', currency: 'INR', minPackSize: '50', unit: 'Piece/Pieces', image: 'https://loremflickr.com/400/300?random=207', seller: { companyName: 'Durga Engineers', location: 'Faridabad, Haryana' } },
+    { id: 'rp-8', name: 'High Dump Backhoe Loader Warranty: Standard', price: null, minPackSize: null, image: 'https://loremflickr.com/400/300?random=208', seller: { companyName: 'Sec-rjmt Engineering Pvt. Ltd.', location: 'Faridabad, Haryana' } },
+    { id: 'rp-9', name: 'Heavy Duty Tractor Attachment Backhoe Loaders', price: null, minPackSize: null, image: 'https://loremflickr.com/400/300?random=209', seller: { companyName: 'Ab Excavators & Earthmovers P...', location: 'Faridabad, Haryana' } },
+    { id: 'rp-10', name: 'JCB Backhoe Loader Bucket Bush - Polished Mild Steel,...', price: '80', currency: 'INR', minPackSize: '350', unit: 'Piece/Pieces', image: 'https://loremflickr.com/400/300?random=210', seller: { companyName: 'R N Industries', location: 'Faridabad, Haryana' } }
   ];
 
   const exploreCategories = [
-    { name: 'Tractor Loader Backhoe', image: 'https://picsum.photos/100/100?random=301' },
-    { name: 'Backhoe Excavator', image: 'https://picsum.photos/100/100?random=302' },
-    { name: 'Truck Loader', image: 'https://picsum.photos/100/100?random=303' },
-    { name: 'Backhoe Attachments', image: 'https://picsum.photos/100/100?random=304' },
-    { name: 'Shovel Loader', image: 'https://picsum.photos/100/100?random=305' },
-    { name: 'Skip Loader', image: 'https://picsum.photos/100/100?random=306' },
-    { name: 'Backhoe Bucket', image: 'https://picsum.photos/100/100?random=307' },
-    { name: 'Mine Loader', image: 'https://picsum.photos/100/100?random=308' },
-    { name: 'Mini Loader', image: 'https://picsum.photos/100/100?random=309' },
-    { name: 'Wheel Loaders', image: 'https://picsum.photos/100/100?random=310' },
-    { name: 'Mini Front End Loader', image: 'https://picsum.photos/100/100?random=311' },
-    { name: 'Front End Loader', image: 'https://picsum.photos/100/100?random=312' }
+    { name: 'Tractor Loader Backhoe', image: 'https://loremflickr.com/100/100?random=301' },
+    { name: 'Backhoe Excavator', image: 'https://loremflickr.com/100/100?random=302' },
+    { name: 'Truck Loader', image: 'https://loremflickr.com/100/100?random=303' },
+    { name: 'Backhoe Attachments', image: 'https://loremflickr.com/100/100?random=304' },
+    { name: 'Shovel Loader', image: 'https://loremflickr.com/100/100?random=305' },
+    { name: 'Skip Loader', image: 'https://loremflickr.com/100/100?random=306' },
+    { name: 'Backhoe Bucket', image: 'https://loremflickr.com/100/100?random=307' },
+    { name: 'Mine Loader', image: 'https://loremflickr.com/100/100?random=308' },
+    { name: 'Mini Loader', image: 'https://loremflickr.com/100/100?random=309' },
+    { name: 'Wheel Loaders', image: 'https://loremflickr.com/100/100?random=310' },
+    { name: 'Mini Front End Loader', image: 'https://loremflickr.com/100/100?random=311' },
+    { name: 'Front End Loader', image: 'https://loremflickr.com/100/100?random=312' }
   ];
 
   const moreProductsFromSeller = [
-    { id: 'mps-1', name: 'Concrete Placing Boom...', image: 'https://picsum.photos/400/300?random=401' },
-    { id: 'mps-2', name: 'Tm 300 Truck Mounted Cran...', image: 'https://picsum.photos/400/300?random=402' },
-    { id: 'mps-3', name: 'Af40D-50D Forklifts - Col...', image: 'https://picsum.photos/400/300?random=403' },
-    { id: 'mps-4', name: 'Af 40D Forklift - Color: Yellow...', image: 'https://picsum.photos/400/300?random=404' },
-    { id: 'mps-5', name: 'Add 95 Vibratory Roll...', image: 'https://picsum.photos/400/300?random=405' },
-    { id: 'mps-6', name: 'Tm 250 C Truck Mounted Cran...', image: 'https://picsum.photos/400/300?random=406' },
-    { id: 'mps-7', name: 'ACX 750 Crawler Cran...', image: 'https://picsum.photos/400/300?random=407' },
-    { id: 'mps-8', name: 'Add 34 Vibratory Roll...', image: 'https://picsum.photos/400/300?random=408' },
-    { id: 'mps-9', name: 'Sb 123 Lorry Loader Crane...', image: 'https://picsum.photos/400/300?random=409' },
-    { id: 'mps-10', name: 'Ab 813 Lorry Loader Crane...', image: 'https://picsum.photos/400/300?random=410' }
+    { id: 'mps-1', name: 'Concrete Placing Boom...', image: 'https://loremflickr.com/400/300?random=401' },
+    { id: 'mps-2', name: 'Tm 300 Truck Mounted Cran...', image: 'https://loremflickr.com/400/300?random=402' },
+    { id: 'mps-3', name: 'Af40D-50D Forklifts - Col...', image: 'https://loremflickr.com/400/300?random=403' },
+    { id: 'mps-4', name: 'Af 40D Forklift - Color: Yellow...', image: 'https://loremflickr.com/400/300?random=404' },
+    { id: 'mps-5', name: 'Add 95 Vibratory Roll...', image: 'https://loremflickr.com/400/300?random=405' },
+    { id: 'mps-6', name: 'Tm 250 C Truck Mounted Cran...', image: 'https://loremflickr.com/400/300?random=406' },
+    { id: 'mps-7', name: 'ACX 750 Crawler Cran...', image: 'https://loremflickr.com/400/300?random=407' },
+    { id: 'mps-8', name: 'Add 34 Vibratory Roll...', image: 'https://loremflickr.com/400/300?random=408' },
+    { id: 'mps-9', name: 'Sb 123 Lorry Loader Crane...', image: 'https://loremflickr.com/400/300?random=409' },
+    { id: 'mps-10', name: 'Ab 813 Lorry Loader Crane...', image: 'https://loremflickr.com/400/300?random=410' }
   ];
 
   const recommendedProducts = [
-    { id: 'rec-1', name: 'Backhoe Loader - 0.7 cu.m Bucket Capacit...', image: 'https://picsum.photos/400/300?random=501', company: 'Sec-rjmt Engineering P...' },
-    { id: 'rec-2', name: 'Backhoe Loader - 1.0 Cu.m. Loader...', image: 'https://picsum.photos/400/300?random=502', company: 'Action Construction...' },
-    { id: 'rec-3', name: 'Low Fuel Consumption And...', image: 'https://picsum.photos/400/300?random=503', company: 'Jcb India Limited' },
-    { id: 'rec-4', name: '4dx Backhoe Loader', image: 'https://picsum.photos/400/300?random=504', company: 'Jcb India Limited' },
-    { id: 'rec-5', name: 'Backhoe Loaders - Compact Frame...', image: 'https://picsum.photos/400/300?random=505', company: 'Gmmco Ltd.' },
-    { id: 'rec-6', name: 'Backhoe Loader - Premium Quality...', image: 'https://picsum.photos/400/300?random=506', company: 'Sec-rjmt Engineering P...' },
-    { id: 'rec-7', name: 'Backhoe Loaders - 80 LPM Pump, Max...', image: 'https://picsum.photos/400/300?random=507', company: 'Sec-rjmt Engineering P...' },
-    { id: 'rec-8', name: 'Ax 124 - 4 Wd Backhoe Loader -...', image: 'https://picsum.photos/400/300?random=508', company: 'Action Construction...' }
+    { id: 'rec-1', name: 'Backhoe Loader - 0.7 cu.m Bucket Capacit...', image: 'https://loremflickr.com/400/300?random=501', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-2', name: 'Backhoe Loader - 1.0 Cu.m. Loader...', image: 'https://loremflickr.com/400/300?random=502', company: 'Action Construction...' },
+    { id: 'rec-3', name: 'Low Fuel Consumption And...', image: 'https://loremflickr.com/400/300?random=503', company: 'Jcb India Limited' },
+    { id: 'rec-4', name: '4dx Backhoe Loader', image: 'https://loremflickr.com/400/300?random=504', company: 'Jcb India Limited' },
+    { id: 'rec-5', name: 'Backhoe Loaders - Compact Frame...', image: 'https://loremflickr.com/400/300?random=505', company: 'Gmmco Ltd.' },
+    { id: 'rec-6', name: 'Backhoe Loader - Premium Quality...', image: 'https://loremflickr.com/400/300?random=506', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-7', name: 'Backhoe Loaders - 80 LPM Pump, Max...', image: 'https://loremflickr.com/400/300?random=507', company: 'Sec-rjmt Engineering P...' },
+    { id: 'rec-8', name: 'Ax 124 - 4 Wd Backhoe Loader -...', image: 'https://loremflickr.com/400/300?random=508', company: 'Action Construction...' }
   ];
 
   const popularCategories = [
